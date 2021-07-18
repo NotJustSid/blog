@@ -92,8 +92,12 @@ figcaption {
 blockquote {
 	font-style: italic;
 	border-left: 8px solid $border-color;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 	padding-left: 20px;
+	padding-right: 0.8rem;
 	background-color: ghostwhite;
+	overflow-x: auto;
 
 	@media #{$medium} {
 		margin-left: -28px;
