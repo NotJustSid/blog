@@ -14,9 +14,9 @@ tags:
 image:
   path: /images/
   background: prime-bg.jpg
-  feature: LambdasInCPP/lambdas-in-cpp.jpg
-  credit: Myself :P
-  creditlink: 
+  feature: LambdasInCPP/feature.svg
+  credit: Carbon
+  creditlink: https://carbon.now.sh/
 date: 2019-04-10
 ---
 
