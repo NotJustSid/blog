@@ -241,7 +241,7 @@ This encoding right here takes all kinds of things all kinds of higher levels an
 Unlike UTF-16, there's no subtracting jibber-jabber going on - you take the codepoint, then put the bits as required into some bytes, convert it to it's binary format, put the bits in placeholders of a defined layout which depends on the range in which the code point lies:
 
 <center>
-    <img src="/blog/images/Unicode/u8cprange.svg" style="border-width: 2px; border-color: #363636; border-style: solid;" data-zoomable>
+    <img src="/blog/images/Unicode/u8cprange.svg" data-zoomable>
 </center>
 
 The cool thing about this is that the first byte in the encoding actually tells you how many bytes are about to follow. The bytes that follow are called *continuation bytes*. Continuation bytes are always of the form  `10xxxxxx`.
