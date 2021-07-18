@@ -285,23 +285,28 @@ header .entry-meta {
 		box-shadow: 0 0 0 0, 0 6px 12px rgba(#000,0.1);
 		border-radius: 3px;
 
+		overflow-x: auto;
+		
 		@media #{$small} {
 			margin-left: 0px;
+			margin-right: 0px;
+			margin-top: 0px;
 			width: 100%;
 			padding: 25px 30px;
 			font-size: 1.03rem;
 		}
 
 		@media #{$medium} {
-			margin-left: 10px;
-			margin-right: 10px;
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-top: 0px;
 			padding: 20px 30px;
 			font-size: 1.05rem;
 		}
 
 		@media #{$large} {
-			max-width: 80%;
-			margin: 50px auto 30px auto;
+			max-width: 100%;
+			margin: 0 0 30px 0;
 			padding: 50px 80px;
 			font-size: 1.15rem;
 			> p:first-child {
