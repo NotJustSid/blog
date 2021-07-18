@@ -1,6 +1,4 @@
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
+.preloader {
 	position: fixed;
 	left: 0px;
 	top: 0px;
@@ -8,6 +6,19 @@
 	height: 100%;
 	z-index: 9999;
 	background: url(../preloader.gif) center no-repeat #2A2826;
+}
+
+@keyframes fadeout {
+	0% {
+		opacity: 1;
+	}
+    100% {
+		opacity: 0;
+	}
+}
+.preloader-fadeOut {
+	opacity: 0;
+	animation: fadeout 0.2s ease-out;
 }
 
 body{

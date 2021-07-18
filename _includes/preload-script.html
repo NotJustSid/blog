@@ -2,14 +2,17 @@
 
 	function fade(element) {
     	setTimeout(()=>{
-			$(`.${element.classList[0]}`).fadeOut();
+			element.classList.add('preloader-fadeOut');
 			document.body.style.overflow = 'unset';
 			document.body.style.position = 'unset';
+			element.addEventListener('animationend', ()=>{
+				element.style.display = 'none';
+			});
 		}, 1000);
 	}
 
 	window.addEventListener('load', function() {
-		fade(document.getElementsByClassName('se-pre-con')[0]);
+		fade(document.querySelector('.preloader'));
 	});
 
 </script>
