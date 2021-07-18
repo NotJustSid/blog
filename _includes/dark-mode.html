@@ -1,28 +1,4 @@
 <script>
-    function setDarkMode() {
-        if (localStorage.getItem('darkMode')) {
-
-            if (localStorage.getItem('darkMode') !== 'true') {
-
-                localStorage.setItem('darkMode', 'true');
-
-                enableDarkMode();
-                document.getElementById('darkModeText').innerHTML =
-                    '<img src="https://img.icons8.com/color/48/000000/smiling-sun.png">';
-
-            } else {
-                localStorage.setItem('darkMode', 'false');
-                disableDarkMode();
-                document.getElementById('darkModeText').innerHTML =
-                    '<img src="https://img.icons8.com/color/48/000000/full-moon.png">'
-            }
-        } else {
-            localStorage.setItem('darkMode', 'true');
-            document.getElementById('darkModeText').innerHTML =
-                '<img src="https://img.icons8.com/color/48/000000/smiling-sun.png">';
-            enableDarkMode();
-        }
-    }
 
     function disableDarkMode() {
 
@@ -31,199 +7,161 @@
             document.getElementsByClassName('entry-content')[0].style.backgroundColor = '';
         }
 
-        for (let i = 0; i < document.getElementsByTagName('blockquote').length; i++) {
-            document.getElementsByTagName('blockquote')[i].style.backgroundColor = '';
-        }
+        // Non-conditional unsets
 
-        document.body.style.backgroundColor = "";
+        const unsetBgColorSelectors = ['blockquote', 'body', '.mainPage-darkMode', '.read-more'];
+        const unsetColorSelectors = ['.partTag', 'a', '.meta-archive-list', '.current-page', '.entry-content', 'code', 
+                                     '.read-more-description', 'input', 'textarea', '.continue-reading-readMore'];
 
-        for (let i = 0; i < document.getElementsByClassName('hentry').length; i++) {
-            if (!document.getElementsByClassName('hentry')[i].classList.contains('postBG'))
-                document.getElementsByClassName('hentry')[i].style.backgroundColor = '';
-        }
+        unsetBgColorSelectors.forEach(query => {
+            document.querySelectorAll(query).forEach(element => element.style.backgroundColor = '');
+        });
 
-        for (let i = 0; i < document.getElementsByTagName('a').length; i++) {
-            if (document.getElementsByTagName('a')[i].classList.contains('darkMode-noGray'))
-                document.getElementsByTagName('a')[i].style.color = '';
-            //Idk what I did here... This place is becoming a mess
-            else
-                document.getElementsByTagName('a')[i].style.color = '';
-        }
+        unsetColorSelectors.forEach(query => {
+            document.querySelectorAll(query).forEach(element => element.style.color = '');
+        });
 
-        for (let i = 0; i < document.getElementsByClassName('partTag').length; i++) {
-            document.getElementsByClassName('partTag')[i].style.color = '';
-        }
+        document.querySelectorAll('.hentry').forEach(element => {
+            if (!element.classList.contains('postBG')) element.style.backgroundColor = '';
+        });
 
-        for (let i = 0; i < document.getElementsByClassName('mainPage-darkMode').length; i++) {
-            document.getElementsByClassName('mainPage-darkMode')[i].style.backgroundColor = '';
-        }
-
-        for (let i = 0; i < document.getElementsByClassName('btn').length; i++) {
-            if (!document.getElementsByClassName('btn')[i].classList.contains('learn-more-btn')) {
-                document.getElementsByClassName('btn')[i].addEventListener("mouseover", () => {
-                    document.getElementsByClassName('btn')[i].style.backgroundColor = '';
+        document.querySelectorAll('.btn').forEach(element => {
+            if(!element.classList.contains('learn-more-btn')) {
+                element.addEventListener('mouseover', () => {
+                    element.style.backgroundColor = '';
                 });
-                document.getElementsByClassName('btn')[i].addEventListener("mouseout", () => {
-                    document.getElementsByClassName('btn')[i].style.backgroundColor = '';
+                element.addEventListener('mouseout', () => {
+                    element.style.backgroundColor = '';
                 });
             }
-        }
-
-        for (let i = 0; i < document.getElementsByClassName('meta-archive-list').length; i++) {
-            document.getElementsByClassName('meta-archive-list')[i].style.color = '';
-        }
-
-        for (let i = 0; i < document.getElementsByClassName('current-page').length; i++) {
-            document.getElementsByClassName('current-page')[i].style.color = '';
-        }
-
-        for (let i = 0; i < document.getElementsByClassName('entry-content').length; i++) {
-            document.getElementsByClassName('entry-content')[i].style.color = '';
-        }
-
-        for (let i = 0; i < document.getElementsByTagName('code').length; i++) {
-            document.getElementsByTagName('code')[i].style.color = '';
-        }
-
-        for (let i = 0; i < document.getElementsByClassName('read-more').length; i++) {
-            document.getElementsByClassName('read-more')[i].style.backgroundColor = '';
-        }
-
-        for (let i = 0; i < document.getElementsByClassName('read-more-description').length; i++) {
-            document.getElementsByClassName('read-more-description')[i].style.color = '';
-        }
-
-
-        for (let i = 0; i < document.getElementsByTagName('input').length; i++) {
-            document.getElementsByTagName('input')[i].style.color = "";
-        }
-
-        for (let i = 0; i < document.getElementsByTagName('textarea').length; i++) {
-            document.getElementsByTagName('textarea')[i].style.color = "";
-        }
-
-        for (let i = 0; i < document.getElementsByClassName('continue-reading-readMore').length; i++) {
-            document.getElementsByClassName('continue-reading-readMore')[i].style.color = '';
-        }
+        });
 
         if (document.getElementsByClassName('commentForm').length) {
-            document.getElementsByClassName('commentForm')[0].style.backgroundColor = "";
-            document.getElementById('commentBoxTitle').style.color = "";
-            document.getElementById('commentList').style.color = "";
-            document.getElementById('commentsFeed').style.backgroundColor = "";
-            document.getElementById('commentFeedTitle').style.color = "";
-            document.getElementById('footerWebInfo').style.color = "";
+            document.getElementsByClassName('commentForm')[0].style.backgroundColor = '';
+            document.getElementById('commentBoxTitle').style.color = '';
+            document.getElementById('commentList').style.color = '';
+            document.getElementById('commentsFeed').style.backgroundColor = '';
+            document.getElementById('commentFeedTitle').style.color = '';
+            document.getElementById('footerWebInfo').style.color = '';
 
-            for (let i = 0; i < document.getElementsByClassName('commentElement').length; i++) {
-                document.getElementsByClassName('commentElement')[i].style.borderColor = '';
+            unsetBorderColor = (query) => {
+                document.querySelectorAll(query).forEach(element => {
+                    element.style.borderColor = '';
+                });
             }
 
-            for (let i = 0; i < document.getElementsByClassName('replyElement').length; i++) {
-                document.getElementsByClassName('replyElement')[i].style.borderColor = '';
-            }
-
-            for (let i = 0; i < document.getElementsByClassName('commentIdLine').length; i++) {
-                document.getElementsByClassName('commentIdLine')[i].style.borderColor = '';
-            }
+            unsetBorderColor('commentElement');
+            unsetBorderColor('replyElement');
+            unsetBorderColor('commentIdLine');
         }
     }
 
     function enableDarkMode() {
+
+        //! Non-conditional sets
+        const setBgColorSelectors = {
+            'blockquote': '#222',
+            'body': '#222',
+            '.mainPage-darkMode': '#101010',
+            '.read-more': '#080401',
+        };
+
+        const setColorSelectors = {
+            '.partTag': 'white',
+            '.meta-archive-list': '',
+            '.current-page': 'gray',
+            '.entry-content': 'white',
+            '.read-more-description': '#aaa',
+            'input': 'wheat',
+            'textarea': 'wheat',
+            '.continue-reading-readMore': '#444'
+        };
+
+        for (let query in setBgColorSelectors) {
+            document.querySelectorAll(query).forEach(element => {
+                element.style.backgroundColor = setBgColorSelectors[query];
+            });
+        }
+
+        for (let query in setColorSelectors) {
+            document.querySelectorAll(query).forEach(element => {
+                element.style.color = setColorSelectors[query];
+            });
+        }
 
         if (document.getElementsByClassName('entry-content') && document.body.getAttribute('id') !== 'post-index') {
             document.getElementsByClassName('entry-content')[0].style.color = 'white';
             document.getElementsByClassName('entry-content')[0].style.backgroundColor = '#222';
         }
 
-        for (let i = 0; i < document.getElementsByTagName('blockquote').length; i++) {
-            document.getElementsByTagName('blockquote')[i].style.backgroundColor = '#222';
-        }
+        document.querySelectorAll('hentry').forEach(element => {
+            if(!element.classList.contains('postBG'))
+                element.style.backgroundColor = '#444';
+        });
 
-        document.body.style.backgroundColor = "#222";
+        document.querySelectorAll('a').forEach(element => {
+            if (element.classList.contains('darkMode-noGray')) 
+                element.style.color = 'white';
+            else element.style.color = 'gray';
+        });
 
-        for (let i = 0; i < document.getElementsByClassName('hentry').length; i++) {
-            if (!document.getElementsByClassName('hentry')[i].classList.contains('postBG'))
-                document.getElementsByClassName('hentry')[i].style.backgroundColor = '#444';
-        }
-
-        for (let i = 0; i < document.getElementsByTagName('a').length; i++) {
-            if (document.getElementsByTagName('a')[i].classList.contains('darkMode-noGray'))
-                document.getElementsByTagName('a')[i].style.color = 'white';
-            else
-                document.getElementsByTagName('a')[i].style.color = 'gray';
-        }
-
-        for (let i = 0; i < document.getElementsByClassName('mainPage-darkMode').length; i++) {
-            document.getElementsByClassName('mainPage-darkMode')[i].style.backgroundColor = '#101010';
-        }
-
-        for (let i = 0; i < document.getElementsByClassName('partTag').length; i++) {
-            document.getElementsByClassName('partTag')[i].style.color = 'white';
-        }
-
-        for (let i = 0; i < document.getElementsByClassName('btn').length; i++) {
-            if (!document.getElementsByClassName('btn')[i].classList.contains('learn-more-btn')) {
-                document.getElementsByClassName('btn')[i].addEventListener("mouseover", () => {
-                    document.getElementsByClassName('btn')[i].style.backgroundColor = '#000';
+        document.querySelectorAll('.btn').forEach(element => {
+            if(!element.classList.contains('learn-more-btn')) {
+                element.addEventListener('mouseover', () => {
+                    element.style.backgroundColor = '#000';
                 });
-                document.getElementsByClassName('btn')[i].addEventListener("mouseout", () => {
-                    document.getElementsByClassName('btn')[i].style.backgroundColor = '#222';
+                element.addEventListener('mouseout', () => {
+                    element.style.backgroundColor = '#222';
                 });
             }
-        }
-
-        for (let i = 0; i < document.getElementsByClassName('meta-archive-list').length; i++) {
-            document.getElementsByClassName('meta-archive-list')[i].style.color = '';
-        }
-
-        for (let i = 0; i < document.getElementsByClassName('current-page').length; i++) {
-            document.getElementsByClassName('current-page')[i].style.color = 'grey';
-        }
-
-        for (let i = 0; i < document.getElementsByClassName('entry-content').length; i++) {
-            document.getElementsByClassName('entry-content')[i].style.color = 'white';
-        }
-
-        for (let i = 0; i < document.getElementsByClassName('read-more').length; i++) {
-            document.getElementsByClassName('read-more')[i].style.backgroundColor = '#080401';
-        }
-
-        for (let i = 0; i < document.getElementsByClassName('read-more-description').length; i++) {
-            document.getElementsByClassName('read-more-description')[i].style.color = '#aaa';
-        }
-
-
-        for (let i = 0; i < document.getElementsByTagName('input').length; i++) {
-            document.getElementsByTagName('input')[i].style.color = "wheat";
-        }
-
-        for (let i = 0; i < document.getElementsByTagName('textarea').length; i++) {
-            document.getElementsByTagName('textarea')[i].style.color = "wheat";
-        }
-
-        for (let i = 0; i < document.getElementsByClassName('continue-reading-readMore').length; i++) {
-            document.getElementsByClassName('continue-reading-readMore')[i].style.color = '#444';
-        }
+        });
 
         if (document.getElementsByClassName('commentForm').length) {
-            document.getElementsByClassName('commentForm')[0].style.backgroundColor = "#101112";
-            document.getElementById('commentBoxTitle').style.color = "wheat";
-            document.getElementById('commentList').style.color = "white";
-            document.getElementById('commentsFeed').style.backgroundColor = "#101112";
-            document.getElementById('commentFeedTitle').style.color = "white";
-            document.getElementById('footerWebInfo').style.color = "white";
+            document.getElementsByClassName('commentForm')[0].style.backgroundColor = '#101112';
+            document.getElementById('commentBoxTitle').style.color = 'wheat';
+            document.getElementById('commentList').style.color = 'white';
+            document.getElementById('commentsFeed').style.backgroundColor = '#101112';
+            document.getElementById('commentFeedTitle').style.color = 'white';
+            document.getElementById('footerWebInfo').style.color = 'white';
 
-            for (let i = 0; i < document.getElementsByClassName('commentElement').length; i++) {
-                document.getElementsByClassName('commentElement')[i].style.borderColor = '#343435';
-            }
+            const setBorderColor = (query) => {
+                document.querySelectorAll(query).forEach(element => {
+                    element.style.borderColor = '#343435';
+                });
+            };
 
-            for (let i = 0; i < document.getElementsByClassName('replyElement').length; i++) {
-                document.getElementsByClassName('replyElement')[i].style.borderColor = '#343435';
-            }
+            setBorderColor('.commentElement');
+            setBorderColor('.replyElement');
+            setBorderColor('.commentIdLine');
+        }
+    }
 
-            for (let i = 0; i < document.getElementsByClassName('commentIdLine').length; i++) {
-                document.getElementsByClassName('commentIdLine')[i].style.borderColor = '#343435';
+    const setLightModeImg = '<img src="https://img.icons8.com/color/48/000000/smiling-sun.png">';
+    const setdarkModeImg = '<img src="https://img.icons8.com/color/48/000000/full-moon.png">';
+
+    function setDarkMode() {
+
+        if (localStorage.getItem('darkMode')) {
+
+            if (localStorage.getItem('darkMode') !== 'true') {
+
+                localStorage.setItem('darkMode', 'true');
+
+                enableDarkMode();
+                document.getElementById('darkModeText').innerHTML = setLightModeImg;
+
+            } 
+            else {
+                localStorage.setItem('darkMode', 'false');
+                disableDarkMode();
+                document.getElementById('darkModeText').innerHTML = setdarkModeImg;
+                    
             }
+        } 
+        else {
+            localStorage.setItem('darkMode', 'true');
+            document.getElementById('darkModeText').innerHTML = setLightModeImg;
+            enableDarkMode();
         }
     }
 
@@ -231,15 +169,15 @@
         if (localStorage.getItem('darkMode')) {
             if (localStorage.getItem('darkMode') === 'true') {
                 enableDarkMode();
-                document.getElementById('darkModeText').innerHTML =
-                    '<img src="https://img.icons8.com/color/48/000000/smiling-sun.png">';
-            } else {
-                document.getElementById('darkModeText').innerHTML =
-                    '<img src="https://img.icons8.com/color/48/000000/full-moon.png">';
+                document.getElementById('darkModeText').innerHTML = setLightModeImg;
+            } 
+            else {
+                document.getElementById('darkModeText').innerHTML = setdarkModeImg;
             }
-        } else {
-            document.getElementById('darkModeText').innerHTML =
-                '<img src="https://img.icons8.com/color/48/000000/full-moon.png">'
+        } 
+        else {
+            document.getElementById('darkModeText').innerHTML = setdarkModeImg;
         }
     }
+
 </script>
