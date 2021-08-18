@@ -591,3 +591,11 @@ header .entry-meta {
 #goog-wm-sb {
 	@extend .btn;
 }
+
+/*
+   Handles MathJax Display Equation Overflow
+   ========================================================================== */
+
+mjx-container[display="true"] {
+    overflow: auto;
+}
