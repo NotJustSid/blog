@@ -255,7 +255,7 @@ Notice that we only care about the magnitude of this force and not its direction
 
 <p>
 <center>
-  <img src="/blog/images/WorkVectsorCalc/work_2.svg" data-zoomable>
+  <img src="/blog/images/WorkVectorCalc/work_2.svg" data-zoomable>
 </center>
 </p>
 
@@ -274,7 +274,7 @@ Both of these seem like properties of the path itself. The tangent vector task s
 
   <p>
   <center>
-    <img src="/blog/images/WorkVectsorCalc/work_3.svg" style="height: 250px" data-zoomable>
+    <img src="/blog/images/WorkVectorCalc/work_3.svg" style="height: 250px" data-zoomable>
   </center>
   </p>
 
@@ -282,7 +282,7 @@ Okay, let's find the direction for the small section. At the point of concern, t
 
 <p>
   <center>
-    <img src="/blog/images/WorkVectsorCalc/work_4.svg" data-zoomable>
+    <img src="/blog/images/WorkVectorCalc/work_4.svg" data-zoomable>
   </center>
 </p>
 
@@ -324,7 +324,7 @@ Alright, the last puzzle in the box: the small length. This should be fairly eas
 
 <p>
 <center>
-  <img src="/blog/images/WorkVectsorCalc/work_5.svg" data-zoomable>
+  <img src="/blog/images/WorkVectorCalc/work_5.svg" data-zoomable>
 </center>
 </p>
 
@@ -452,7 +452,7 @@ Our aim is to find the work done using the two expressions in the order that the
 
 <p>
 <center>
-  <img src="/blog/images/WorkVectsorCalc/work_6.svg" data-zoomable>
+  <img src="/blog/images/WorkVectorCalc/work_6.svg" data-zoomable>
 </center>
 </p>
 
