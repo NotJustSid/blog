@@ -18,7 +18,7 @@ Jeez, it's been a while. Where have I been? Well, on this planet of course! But 
 
 Aaand with that, *slightly-philosophical-Sid*'s out. Let's get started with this. What's this? This is more of a mathematical continuation to what we came up with in the last Energy Series talk. This is trying to make even more mathematical sense of the definition of work - building from the intuition we've cultivated so far.
 
-> While this post is part of the series, I don't require you to read the last post (it wouldn't hurt to read it though :P); All you need to get going is know what work is and how we calculate it on an elementary level.
+> While this post is part of the series, I don't require you to read the last post (it wouldn't hurt to read it though :P); All you need to get going is to know what work is and how we calculate it on an elementary level.
 
 Before we start, I should make you aware that this requires some mathematical background I'm gonna assume:
 
