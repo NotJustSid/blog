@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" version="1.1" viewBox="0 0 2400 1600" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="Arrow2Lend" overflow="visible" orient="auto">
+   <path transform="scale(1.1) rotate(180) translate(1)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#f0f0f0" fill-rule="evenodd" stroke="#f0f0f0" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <clipPath id="clip360">
+   <rect width="2400" height="1600"/>
+  </clipPath>
+ </defs>
+ <path d="m0 1600h2400v-1600h-2400z" clip-path="url(#clip360)" fill="#1e1e1e" fill-rule="evenodd"/>
+ <defs>
+  <clipPath id="clip362">
+   <rect x="178" y="47" width="2175" height="1440"/>
+  </clipPath>
+ </defs>
+ <g transform="translate(-65.811 2.2955)">
+  <g transform="translate(-176.45 -92.977)" fill="none" stroke="#fe4365" stroke-linejoin="round" stroke-width="4">
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1172.6 890.28 1130.9 945.48" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1167 927.6 1130.9 945.48 1138.2 905.9" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1130.9 945.48 1172.6 890.28" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1172.6 828.56 1106.7 872.2" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1146.6 867.34 1106.7 872.2 1126.8 837.32" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2601 -1310.4)" points="1172.6 766.85 1079.4 766.85" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2601 -1310.4)" points="1115.4 784.85 1079.4 766.85 1115.4 748.85" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1172.6 705.13 1106.7 661.49" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1126.8 696.37 1106.7 661.49 1146.6 666.36" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1172.6 643.42 1130.9 588.22" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1138.2 627.79 1130.9 588.22 1167 606.1" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1130.9 588.22 1172.6 643.42" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1150.4)" points="1265.8 828.56 1265.8 890.28" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1150.4)" points="1283.8 854.28 1265.8 890.28 1247.8 854.28" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1470.4)" points="1265.8 705.13 1265.8 643.42" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1470.4)" points="1247.8 679.42 1265.8 643.42 1283.8 679.42" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1359 890.28 1400.7 945.48" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1393.4 905.9 1400.7 945.48 1364.7 927.6" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1400.7 945.48 1359 890.28" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1359 828.56 1425 872.2" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1404.9 837.32 1425 872.2 1385 867.34" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2441 -1310.4)" points="1359 766.85 1452.2 766.85" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2441 -1310.4)" points="1416.2 748.85 1452.2 766.85 1416.2 784.85" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1359 705.13 1425 661.49" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1385 666.36 1425 661.49 1404.9 696.37" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1359 643.42 1400.7 588.22" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1364.7 606.1 1400.7 588.22 1393.4 627.79" clip-path="url(#clip362)"/>
+   <polyline transform="matrix(3.131 0 0 2.8704 -2521 -1310.4)" points="1400.7 588.22 1359 643.42" clip-path="url(#clip362)"/>
+  </g>
+  <circle cx="1265.8" cy="797.7" r="283.09" fill="#fff" opacity=".17891" stroke="#fff" stroke-linecap="round" stroke-width="7.7878"/>
+  <path d="m1566.1 774.66c-5.7462-74.652-40.571-146.69-95.508-197.56-54.937-50.871-129.43-80.065-204.31-80.065s-149.37 29.194-204.31 80.065c-54.937 50.871-89.762 122.91-95.508 197.56-4.7002 61.063 9.8245 123.47 41.007 176.18 31.182 52.711 78.879 95.491 134.66 120.78 55.781 25.285 119.39 32.961 179.58 21.67s116.7-41.497 159.52-85.278" fill="none" marker-end="url(#Arrow2Lend)" stroke="#f0f0f0" stroke-width="4px"/>
+ </g>
+</svg>
