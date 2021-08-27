@@ -2,7 +2,9 @@
   <h2 id="commentBoxTitle">
     Comment Here! 
     <div class="tooltip">ℹ️
-      <span class="tooltiptext">The commenting system is still under development, but it sort of works for the moment!<br><br>Oh and your comment might take a while to show up - you should see it when you reload after a few minutes...</span>
+      <span class="tooltiptext">
+        The commenting system is still under development, but it sort of works for the moment!<br><br>Oh and your comment might take a while to show up - you should see it when you reload after a few minutes...😬
+      </span>
     </div>
   </h2>
 
@@ -33,7 +35,12 @@
 <script>
 function cancelReply(){
   document.getElementById('commentReplyCancel').style.display='none';
-  document.getElementById('commentBoxTitle').innerText='Comment Here!';
+  document.getElementById('commentBoxTitle').innerHTML = `Comment Here! 
+    <div class="tooltip">ℹ️
+      <span class="tooltiptext">
+        The commenting system is still under development, but it sort of works for the moment!<br><br>Oh and your comment might take a while to show up - you should see it when you reload after a few minutes...😬
+      </span>
+    </div>`;
   document.getElementById('comment-parent').value='';
 }
 </script>
