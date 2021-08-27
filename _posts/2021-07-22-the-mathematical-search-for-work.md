@@ -112,7 +112,7 @@ As we expected. It's already clear that such a plot is going to get super messy 
 </center>
 </p>
 
-So we **rescale** the arrows such that their length lies between $$0$$ and $$1$$ (this is easily done by dividing the origin vector field expression by the magnitude of the vector).
+So we **rescale** the arrows such that their length lies between $$0$$ and $$1$$ (this is easily done by dividing the original vector field expression by the magnitude of the vector).
 
 > While the vector field plot thingmajig above doesn't capture the length/magnitude, we can still do so by assigning different colors to each arrow depending on the magnitude. Sounds like we merged heatmaps and vector fields!
 
@@ -506,7 +506,7 @@ $$W = \int_0^s\vec{F}\cdot \vec{T}\,\mathrm{d}s$$
 
 # Thank You!
 
-Phew! That was a lot! If you're reading this, thanks a bunch for sticking around. This was a long one, and I don't expect you to read it all in one go. I am not sure how many people read my blog posts and for how long, but it does mean a lot if you've read this far because this took a lot of *work* (alright that's the last pun I promise).
+Phew! That was a lot! If you're reading this, thanks a bunch for sticking around. This was a long one, and I appreciate you for reading all of this. I am not sure how many people read my blog posts and for how long, but it does mean a lot if you've read this far because this took a lot of *work* (alright that's the last pun I promise).
 
 In conclusion,
 
