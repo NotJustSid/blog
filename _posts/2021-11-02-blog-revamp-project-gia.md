@@ -25,7 +25,7 @@ You must know one thing: I am very picky with my names. The way I choose names i
 
 Gia came to my mind and I instantly searched for it's meaning - finding that it originated in Italy and that it's supposed to mean *"God is gracious"*. Aaaaand, let's just get one thing out of the way before this turns into a heated discussion: I like the name, but it doesn't find its basis in the meaning at all. Instead, **GIA** stands for **Generally an Information Arsenal**.
 
-> I was also confounded over the pronunciation, but I finally settled for the prevalent soft G variant.
+> ~~I was also confounded over the pronunciation, but I finally settled for the prevalent soft G variant.~~ Yeah multiple internal debates later, I think I like the hard variant (pronounced like *Guy-a*). It's different in a way and I like that.
 
 This reflects the purpose of the blog perfectly. This blog is not supposed to be just information here and there and at the same time it's not meant to be a *"Sid does this today"*. There's a sweet equilibrium between the two and that's where the content of the blog lies. The blog was created with the intentions of it being mostly informative, but also fun.
 
