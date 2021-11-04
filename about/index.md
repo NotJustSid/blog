@@ -1,31 +1,42 @@
 ---
 layout: page
-title: About this Blog
+title: About this blog and me!
 image:
   feature: about-bg.jpg
   credit: Patrick Tomasso
   creditlink: https://unsplash.com/@impatrickt
-modified: 2021-07-18
+modified: 2021-11-04
 ---
 
-Hi there! I am Sid, and this is my blog. Of course that's evident, but yeah... What is this blog exactly? Well this blog is everything and anything I wanna talk about. It can sometimes be me ranting about something (though I haven't done that yet), or it can just be me being me.
+Hello future reader! The human currently editing this markdown document (which is then rendered as html thanks to some nifty tech) is me! Who's "me"? Well, I go by the name of Sid!
 
-This is what has happened here so far:
+I am an anonymous yet public guy who's addicted to anything he finds interesting. What do I find interesting as of now? Well, it's primarily Physics, Math, CS and all in between (and sometimes not 🤷)!
 
-- I made a blog just for fun.
-- Added some posts and I am never satisfied with anything, so a modification marathon is underway all the time.
-- I had some other stuff to do, so I abandoned the blog.
-- Took it up again, added some posts, added a commenting system, left it alone.
-- Envisioned to make the blog super cool and planned on a ton of posts.
-- Did finish some of them, then I left the blog alone to serve to my other commitments.
-- And well we're here, I kinda wanna deal with it again.
+> Sorry biology and related fields. You don't get a cut...
 
-As is apparent, it's more of a *I gain interest, I write something interesting, I lose interest after a ridiculously long typing session* loop. I can't promise this will stop, but we can surely reduce the duration of each thingy, right, RIGHT?
+My blog, **GIA** (pronounced like *Guy-a*) is supposed to be a way for me to document myself - my thoughts, stuff that entice me and suchlike. It's supposed to cover two main classes of things:
 
-Anyways, that's the timeline, but what is this blog about again? As I said, it can be anything I like and you like (I don't really know how you would otherwise stumble upon this page...). That kinda delegates the answer and introduces a new question - *What do you like?* Uhhh, Science (minus a lot of Biology unless it's interesting and not just some mundane *learn-the-process-and-the-name* stuff) and related stuff.
+- Educational Stuff
+- Me!
 
-Keeping that talk aside forever, I would like to mention that this blog is by no means perfect. And ***wHiLe I aM a PeRfEcTiOnIsT***, I don't wanna make this a perfect blog - it's pretty cool with its flaws. Now if those flaws are bugs, then nah they're gonna go outta here - **ALWAYS COMMENT AS SOON AS YOU FIND A BUG, AND I WILL TRY TO MAKE SURE YOU NEVER SEE IT AGAIN** (I might employ illegal methods if I can't fix it ﾍ(｀▽´*)).
+> GIA = Generally an Information Arsenal. The more you know!
 
-> **Future Sid:** Yeah, I can get pretty weird at times...
+# The journey so far
 
-Anyways, that's it for the whole *About* thingamajig. It wasn't about me, but more about the blog. If you wanna know more about me, go read *all* of the blog posts (*I mean it*, prolly).
+<p>
+<center>
+  <img src="/blog/images/about-illustration.svg" style="border-radius: 10px" data-zoomable>
+</center>
+</p>
+
+Alright, so the guy aka Sid aka me is pretty lazy at times. Sometimes he's struggling through something, or well he's just looking for excuses. At times, he's extremely dedicated and that's when the real stuff happened. I created the blog with the sole purpose of learning about Jekyll and GitHub Pages. This want for knowledge evolved into a want for sharing knowledge with my next few posts. Up next, I decided my blog with almost no readers (as of now, but that's definitely gonna change!) should have a way for people to comment (which is fully functional right now - well not really, but it works for the most part 😅)
+
+> **pERfEcTIOniST Sid:** IT'S GOING TO BE FULLY FUNCTIONAL WHEN I AM SATISFIED AIGHT?
+
+# Before you go
+
+So yep. GIA's the digital embodiment of Sid - well kinda. It's not supposed to informationally exhaustive, but it's not supposed to be the complete either. A sweet spot where you have information and casual talk all combined into the richness of some beautiful text and images on the web.
+
+GIA's not perfect. And it'll never be. If you find any bugs, it'll be much appreciated if you let me know using the comments for example.
+
+Thanks for showing interest in an about me hidden deep (just play along) in here. I hope you enjoy!
