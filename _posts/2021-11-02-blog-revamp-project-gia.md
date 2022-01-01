@@ -11,7 +11,7 @@ image:
 
 > "People will forget what you said, people will forget what you did, but people will never forget how you made them feel." - Maya Angelou
 
-Over the past year or two, I've had some ridiculous expositions to a promiscuous set of experiences. These experiences have taught me a lot - both educationally and in many aspects of life. Thinking about these eventually made me think about my blog (that makes no sense, but uh well that's what happened 😅). The way it stands currently, it's extremely generic; everyone can agree that *Sid's Blog* is a placeholder for a name and just way to showcase that I am lazy. The revamp is supposed to change the branding of this blog.
+Over the past year or two, I've had some ridiculous expositions to a varied set of experiences. These experiences have taught me a lot - both educationally and in many aspects of life. Thinking about these eventually made me think about my blog (that makes no sense, but uh well that's what happened 😅). The way it stands currently, it's extremely generic; everyone can agree that *Sid's Blog* is a placeholder for a name and just way to showcase that I am lazy. The revamp is supposed to change the branding of this blog.
 
 > I mean laziness is still an inherent characteristic in me 😛, but sometimes certain events in my life make me go, "Yep it's time to do something here and show everyone, or someone."
 
