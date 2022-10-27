@@ -32,7 +32,11 @@
         {% if site.reading_time %}
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
+          {% if page.reading_time_override %}
+          Reading time ~ {{page.reading_time_override}} minutes
+          {% else %}
           {% include read-time.html %}
+          {% endif %}
         </p><!-- /.entry-reading-time -->
         {% endif %}
       </div><!-- /.header-title-wrap -->
