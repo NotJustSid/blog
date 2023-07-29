@@ -1,0 +1,71 @@
+//! TODO: Move this elsewhere
+
+body {
+    background-color: $background-primary !important;
+	color: $text-primary !important;
+}
+
+.post-entry {
+	background-color: $background-secondary;
+	margin: 0 2px 20px 2px;
+	box-shadow: 0 0 0 1px rgba($border-color,0.1), 0 6px 12px rgba($black-5,0.1);
+	border-radius: 5px;
+	padding-bottom: 25px;
+	min-width: 95%;
+}
+
+.post-entry-title a {
+	color: $text-primary;
+	margin-left: 25px;
+}
+
+.post-entry-img-meta-container {
+	position: relative;
+}
+
+.post-entry-meta {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: $text-secondary !important;
+	background-color: $primary !important;
+	padding: 10px;
+    padding-left: 25px;
+	padding-right: 25px;
+	font-weight: bold;
+}
+
+.partTag {
+	border-style: solid; 
+	border-width: 1.5px; 
+	border-radius: 0.3em; 
+	padding: 0.25em;
+}
+
+.post-entry-description {
+	color: #e5e5e5;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+
+.post-entry-tags {
+	margin-left: 25px;
+}
+
+.post-entry-tags a {
+	display: inline-block;
+    border-radius: 4px;
+    color: $white-2;
+    background-color: $white-5;
+    padding: 2px;
+    margin: 1px;
+}
+
+.post-entry-tags {
+	margin-top: 10px;
+}
+
+.post-entry-image {
+	width: 100%;
+	filter: brightness(82.5%);
+}
