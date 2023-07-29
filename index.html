@@ -14,7 +14,9 @@ image:
 
 <div class="post-entry">
 	<div class="post-img-meta-container">
+		{% if post.image.feature %}
 		<img class="post-entry-image" src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}">
+		{% endif %}
 		<div class="post-entry-meta">
 			<span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>
 
