@@ -1,12 +1,12 @@
 <h1>
 
-![Image](./images/favicon_32x32.png) GIA: Generally an Information Arsenal
+![Image](./images/favicon_32x32.png) GAIA: Generally An Information Arsenal
 
 </h1>
 
 ## ℹ️ What is this?
 
-This is GIA (pronounced *Guy-uh* because why not) - a blog meant to reciprocate what I believe, what I know and what I find interesting.
+This is GAIA (pronounced *Guy-uh* because why not) - a blog meant to reciprocate what I believe, what I know and what I find interesting.
 
 This is a static blog that uses Jekyll and GitHub Pages. The base template is HPSTR made by [Michael Rose @mmistakes](https://github.com/mmistakes).
 
