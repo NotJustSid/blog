@@ -1,0 +1,91 @@
+//! Base Scheme
+
+$text-primary: #dfdfdf;
+$text-secondary: #191919;
+$background-primary: #191919;
+$background-secondary: #1f1f1f;
+$primary: #8fda7e;
+$secondary: #f2ee71;
+$accent: #2175ca;
+
+//! Misc. Colors
+
+// Higher number <=> darker shade
+
+$white-1: #fff;
+$white-2: #e8e8e8;
+$white-3: #bbbbbb;
+$white-4: #dddddd;
+$white-5: #5a5a5a;
+
+$black-1: #222222;
+$black-2: #1e1e1e;
+$black-3: #181818;
+$black-4: #101010;
+$black-5: #000;
+
+
+// Dependent colors
+
+// TODO: Change this to styles or whatever you get the point
+
+
+//!! Comments
+
+.commentForm {
+    $box-shadow-color: $black-5;
+    $background-color: $white-1;
+}
+
+.commentInput {
+    $border-color: #bebed2; //TODO: Change this to something more symmetric and less ugly
+    $border-color-focus: #78788c; //TODO: Same^
+}
+
+.commentP {
+    $color: $white-5;
+}
+
+.commentButtons {
+    $border-color: #78788c; //TODO: Same ^
+    $background-color: #444; //TODO: Maybe something that conforms to the list of blacks
+}
+
+#commentsFeed {
+    $background-color: $white-1;
+    $box-shadow-color: $black-5;
+}
+
+.commentElement {
+    $background-color: $white-1;
+    $border-color: $white-4;
+}
+
+.replyElement {
+    $border-color: $white-4;
+}
+
+.cName { //TODO: Also update these ridiculously uninformative names
+    $color: #87b1eb; //TODO: Same ^^^^
+}
+
+.cDate {
+    $color: #909090; //TODO: Same ^^^^
+}
+
+.cReply {
+    $color: #554f4f; //TODO: Same ^^^^
+}
+
+//! Scrolling (Doesn't change with themes)
+
+$scroll-thumb-bg: #242424;
+$scroll-thumb-border-color: $white-1;
+$scroll-thumb-hover-bg: #393939;
+$scroll-thumb-active-bg: $black-1;
+$scroll-track-bg: #2c2c2c;
+$scroll-track-border-color: #292929;
+$scroll-track-hover-bg: $white-1;
+$scroll-track-active-bg: #272727;
+
+//! 
