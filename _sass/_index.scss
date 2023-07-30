@@ -1,5 +1,7 @@
 //! TODO: Move this elsewhere
 
+$post-entry-margin: 25px;
+
 body {
     background-color: $background-primary !important;
 	color: $text-primary !important;
@@ -21,6 +23,7 @@ body {
 
 .post-entry-img-meta-container {
 	position: relative;
+	z-index: 1;
 }
 
 .post-entry-meta {
@@ -35,23 +38,35 @@ body {
 	font-weight: bold;
 }
 
-.partTag {
-	border-style: solid; 
-	border-width: 1.5px; 
-	border-radius: 0.3em; 
-	padding: 0.25em;
-}
-
 .post-entry-description {
 	color: #e5e5e5;
 	margin-top: 10px;
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: $post-entry-margin;
+	margin-right: $post-entry-margin;
 	line-height: 1.5;
 }
 
 .post-entry-tags {
-	margin-left: 25px;
+	margin-left: $post-entry-margin;
+}
+
+.post-entry-series {
+	display: inline-block;
+	margin-left: $post-entry-margin/2;
+	margin-top: $post-entry-margin/2;
+	border-style: solid; 
+	border-width: 1.5px; 
+	border-radius: 0.3em; 
+	padding: 0.25em;
+	background-color: $secondary;
+	color: rgba($text-secondary, 0.85);
+	border-color: transparent;
+	font-weight: bolder;
+	
+	position: absolute;
+	z-index: 2;
+
+	box-shadow: 0 0 3px 1px $black-1;
 }
 
 .post-entry-tags a {
