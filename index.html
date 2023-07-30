@@ -13,9 +13,16 @@ image:
 	{% endif %}
 
 <div class="post-entry">
-	<div class="post-img-meta-container">
+	<div class="post-entry-img-meta-container">
+		{% if post.series %}
+			<div class="post-entry-series">
+				<span>{{post.seriesname}} Series | Part {{post.part}}</span>
+			</div>
+		{% endif %}
 		{% if post.image.feature %}
-		<img class="post-entry-image" src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}">
+        	<a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
+				<img class="post-entry-image" src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}">
+			</a>		
 		{% endif %}
 		<div class="post-entry-meta">
 			<span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>
@@ -39,7 +46,7 @@ image:
       </h2>
     </div>
     <div class="post-entry-description">
-        {% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 140 }}&hellip;{% endif %}
+        {% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 140 }}{% endif %}
     </div>
 </div>
 
