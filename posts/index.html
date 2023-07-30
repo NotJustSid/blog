@@ -17,7 +17,7 @@ comments: false
 
         <li class="entry-title archiveTitle"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="meta-archive-list">{{ post.title }} 
           {% if post.series %}
-            | Part: {{post.part}}
+           ({{post.series.name}} Series Part {{post.series.part}})
           {% endif %}
         </a></li>
 
