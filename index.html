@@ -16,7 +16,7 @@ image:
 	<div class="post-entry-img-meta-container">
 		{% if post.series %}
 			<div class="post-entry-series">
-				<span>{{post.seriesname}} Series | Part {{post.part}}</span>
+				<span>{{post.series.name}} Series | Part {{post.series.part}}</span>
 			</div>
 		{% endif %}
 		{% if post.image.feature %}

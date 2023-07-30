@@ -3,9 +3,9 @@ layout: post
 title: Work, Vectors, Forces and Energy - Some math behind it all
 description: A sequel to our first intuition about Energy. This one delves into the elementary mathematical aspects (a bit).
 mathjax: true
-series: true
-seriesname: Energy
-part: 2
+series:
+  name: Energy
+  part: 2
 modified: 2020-12-14
 tags:
 - energy

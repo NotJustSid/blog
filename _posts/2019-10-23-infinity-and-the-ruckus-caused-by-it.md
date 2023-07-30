@@ -6,9 +6,9 @@ description: Ever wondered what infinity is? Is it a number? Does it even have e
 date: 2019-10-23 09:05 -0400
 modified: 2019-11-25 12:17
 mathjax: true
-series: true
-seriesname: Infinity
-part: 1
+series:
+  name: Infinity
+  part: 1
 image:
   background: prime-bg.jpg
   feature: Infinity/feature.jpg

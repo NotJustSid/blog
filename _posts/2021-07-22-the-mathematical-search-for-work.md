@@ -3,9 +3,9 @@ layout: post
 title: The mathematical search for work
 description: With Vector Calculus 👀
 mathjax: true
-series: true
-seriesname: Energy
-part: 3
+series:
+  name: Energy
+  part: 3
 image:
   path: /images/
   background: prime-bg.jpg
