@@ -85,11 +85,11 @@ svg:not(:root) {
   margin-bottom: 20px;
   padding: 8px 20px;
   @include font-rem(14);
-  background-color: $primary;
+  background-color: $accent;
   color: #fff;
   border-width: 2px !important;
   border-style: solid !important;
-  border-color: $primary;
+  border-color: $accent;
   border-radius: 3px;
 
   &:visited {
@@ -97,23 +97,21 @@ svg:not(:root) {
   }
 
   &:hover {
-    background-color: #fff;
-    color: $primary;
+    background-color: $secondary;
+    color: $text-secondary;
+    border-color: $secondary;
   }
 }
 
 .btn-inverse {
-  background-color: #fff;
-  color: $primary;
-  border-color: #fff;
-
-  &:visited {
-    color: $primary;
-  }
+  background-color: $secondary;
+  color: $text-secondary;
+  border-color: $secondary;
 
   &:hover {
-    background-color: $primary;
-    color: #fff;
+    background-color: $accent;
+    color: $secondary;
+    border-color: $accent;
   }
 }
 
