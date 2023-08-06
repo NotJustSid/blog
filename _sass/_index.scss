@@ -3,8 +3,8 @@
 $post-entry-margin: 25px;
 
 body {
-    background-color: $background-primary !important;
-	color: $text-primary !important;
+    background-color: $background-primary;
+	color: $text-primary;
 }
 
 .post-entry {
@@ -30,8 +30,8 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	color: $text-secondary !important;
-	background-color: $primary !important;
+	color: $text-secondary;
+	background-color: $primary;
 	padding: 10px;
     padding-left: 25px;
 	padding-right: 25px;
