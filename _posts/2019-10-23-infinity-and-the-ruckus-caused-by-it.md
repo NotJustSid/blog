@@ -10,7 +10,6 @@ series:
   name: Infinity
   part: 1
 image:
-  background: prime-bg.jpg
   feature: Infinity/feature.jpg
   credit: Sid Verma
   creditlink: https://unsplash.com/@sidverma

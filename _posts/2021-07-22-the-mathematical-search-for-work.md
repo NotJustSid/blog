@@ -8,7 +8,6 @@ series:
   part: 3
 image:
   path: /images/
-  background: prime-bg.jpg
   feature: WorkVectorCalc/feature.svg
   credit: Me!
 date: 2021-08-21

@@ -5,7 +5,6 @@ description: It's just us trying to fix a mess we didn't think about beforehand.
 mathjax: true
 image:
   path: /images/
-  background: prime-bg.jpg
   feature: Unicode/feature.jpg
   credit: Bernard Hermant
   creditlink: https://unsplash.com/@bernardhermant
