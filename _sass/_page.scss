@@ -6,20 +6,13 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	background-color: $body-color;
+	background-color: $background-primary;
 }
 
 /* 
    Main content
    ========================================================================== */
 //Entry Cards...
-
-.mainPage-darkMode{
-	@media #{$small} {
-		margin-left: 20px;
-		margin-right: 20px;
-	}
-}
 
 .entry,
 .hentry {
