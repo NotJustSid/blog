@@ -20,7 +20,6 @@ tags:
 - conservation of energy
 image:
   path: "images/Energy/Essence/header1.jpg"
-  background: Energy/Essence/bg1.jpg
   feature: Energy/Essence/header1.jpg
   credit: NASA
   creditlink: https://unsplash.com/@nasa

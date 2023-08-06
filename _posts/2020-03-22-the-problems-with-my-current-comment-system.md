@@ -15,7 +15,6 @@ tags:
 - website
 - dynamic
 image:
-  background: prime-bg.jpg
   feature: CommentSysUpdate1/header.jpg
   credit: Volodymyr Hryshchenko
   creditlink: https://unsplash.com/@lunarts

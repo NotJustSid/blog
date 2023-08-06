@@ -5,7 +5,6 @@ description: This blog is supposed to be an arsenal of information. Or is it?
 date: 2021-11-02
 image:
   path: /images/
-  background: prime-bg.jpg
   feature: GIARevamp/header.svg
 ---
 

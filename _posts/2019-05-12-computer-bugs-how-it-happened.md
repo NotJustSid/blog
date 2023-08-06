@@ -21,7 +21,6 @@ tags:
 - mark 2
 image:
   path: "/images/ComputerBugsHappening/header.jpg"
-  background: ComputerBugsHappening/bg.jpg
   feature: ComputerBugsHappening/header.jpg
   credit: Markus Spiske
   creditlink: https://unsplash.com/@markusspiske
