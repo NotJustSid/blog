@@ -91,12 +91,13 @@ figcaption {
 
 blockquote {
 	font-style: italic;
-	border-left: 8px solid $border-color;
+	border-left: 4px solid $accent;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	padding-left: 20px;
 	padding-right: 0.8rem;
-	background-color: ghostwhite;
+	background-color: lighten($background-secondary, 1);
+	border-radius: 3px;
 	overflow-x: auto;
 
 	@media #{$medium} {
