@@ -12,7 +12,6 @@ tags:
 - function
 - pointers
 image:
-  path: /images/
   feature: LambdasInCPP/feature.svg
   credit: Carbon
   creditlink: https://carbon.now.sh/

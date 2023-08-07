@@ -7,7 +7,6 @@ series:
   name: Energy
   part: 3
 image:
-  path: /images/
   feature: WorkVectorCalc/feature.svg
   credit: Me!
 date: 2021-08-21
@@ -55,7 +54,7 @@ Let's look at at the plot of a simple function $$y = f(x) = x^2$$. The way I've 
 
 <p>
 <center>
-  <img src="/blog/images/WorkVectorCalc/xsquared.svg" style="border-radius: 10px" data-zoomable>
+  <img src="../images/WorkVectorCalc/xsquared.svg" style="border-radius: 10px" data-zoomable>
 </center>
 </p>
 
@@ -63,7 +62,7 @@ Hmmm not so interesting. Just a function plot right? Well yes, but no. Yes becau
 
 <p>
 <center>
-  <img src="/blog/images/WorkVectorCalc/xsquared_scalarfield.svg" data-zoomable>
+  <img src="../images/WorkVectorCalc/xsquared_scalarfield.svg" data-zoomable>
 </center>
 </p>
 
@@ -77,7 +76,7 @@ Similarly, we could also look at the $$f(x, y) = x^2 + y^2$$ (this forms a parab
 
 <p>
 <center>
-  <img src="/blog/images/WorkVectorCalc/scalarheatmap.svg" style="border-radius: 10px" data-zoomable>
+  <img src="../images/WorkVectorCalc/scalarheatmap.svg" style="border-radius: 10px" data-zoomable>
 </center>
 </p>
 
@@ -99,7 +98,7 @@ The vector field would look like so:
 
 <p>
 <center>
-  <img src="/blog/images/WorkVectorCalc/vectorfield(4, 4).svg" style="border-radius: 10px" data-zoomable>
+  <img src="../images/WorkVectorCalc/vectorfield(4, 4).svg" style="border-radius: 10px" data-zoomable>
 </center>
 </p>
 
@@ -107,7 +106,7 @@ As we expected. It's already clear that such a plot is going to get super messy 
 
 <p>
 <center>
-  <img src="/blog/images/WorkVectorCalc/vectorfield(4, 4)_normalized.svg" style="border-radius: 10px" data-zoomable>
+  <img src="../images/WorkVectorCalc/vectorfield(4, 4)_normalized.svg" style="border-radius: 10px" data-zoomable>
 </center>
 </p>
 
@@ -152,7 +151,7 @@ If you understood why we expect what we expect, you've earned the plot:
 
 <p>
 <center>
-  <img src="/blog/images/WorkVectorCalc/vectorfield(x, y).svg" style="border-radius: 10px" data-zoomable>
+  <img src="../images/WorkVectorCalc/vectorfield(x, y).svg" style="border-radius: 10px" data-zoomable>
 </center>
 </p>
 
@@ -160,7 +159,7 @@ And the cleaner, normalized version:
 
 <p>
 <center>
-  <img src="/blog/images/WorkVectorCalc/vectorfield(x, y)_normalized.svg" style="border-radius: 10px" data-zoomable>
+  <img src="../images/WorkVectorCalc/vectorfield(x, y)_normalized.svg" style="border-radius: 10px" data-zoomable>
 </center>
 </p>
 
@@ -200,7 +199,7 @@ Let's step it up! We want to describe the path along the line $$x = y+2$$ starti
 
 <p>
 <center>
-  <img src="/blog/images/WorkVectorCalc/line_path.svg" style="border-radius: 10px" data-zoomable>
+  <img src="../images/WorkVectorCalc/line_path.svg" style="border-radius: 10px" data-zoomable>
 </center>
 </p>
 
@@ -238,7 +237,7 @@ Let's work with what we have so far. Imagine a force described by a vector field
 
 <p>
 <center>
-  <img src="/blog/images/WorkVectorCalc/work_1.svg" data-zoomable>
+  <img src="../images/WorkVectorCalc/work_1.svg" data-zoomable>
 </center>
 </p>
 
@@ -254,7 +253,7 @@ Notice that we only care about the magnitude of this force and not its direction
 
 <p>
 <center>
-  <img src="/blog/images/WorkVectorCalc/work_2.svg" data-zoomable>
+  <img src="../images/WorkVectorCalc/work_2.svg" data-zoomable>
 </center>
 </p>
 
@@ -273,7 +272,7 @@ Both of these seem like properties of the path itself. The tangent vector task s
 
   <p>
   <center>
-    <img src="/blog/images/WorkVectorCalc/work_3.svg" style="height: 250px" data-zoomable>
+    <img src="../images/WorkVectorCalc/work_3.svg" style="height: 250px" data-zoomable>
   </center>
   </p>
 
@@ -281,7 +280,7 @@ Okay, let's find the direction for the small section. At the point of concern, t
 
 <p>
   <center>
-    <img src="/blog/images/WorkVectorCalc/work_4.svg" data-zoomable>
+    <img src="../images/WorkVectorCalc/work_4.svg" data-zoomable>
   </center>
 </p>
 
@@ -323,7 +322,7 @@ Alright, the last puzzle in the box: the small length. This should be fairly eas
 
 <p>
 <center>
-  <img src="/blog/images/WorkVectorCalc/work_5.svg" data-zoomable>
+  <img src="../images/WorkVectorCalc/work_5.svg" data-zoomable>
 </center>
 </p>
 
@@ -451,7 +450,7 @@ Our aim is to find the work done using the two expressions in the order that the
 
 <p>
 <center>
-  <img src="/blog/images/WorkVectorCalc/work_6.svg" data-zoomable>
+  <img src="../images/WorkVectorCalc/work_6.svg" data-zoomable>
 </center>
 </p>
 
