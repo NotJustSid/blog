@@ -93,9 +93,7 @@ Hello! 2+2=4
 
 Seems cool. You can pick up any *ASCII-Table* and see what each character maps to. Here's a short table that we can use:
 
-<center>
-    <img src="../images/Unicode/ascii-demo.svg" data-zoomable>
-</center>
+![ascii-demo](../images/Unicode/ascii-demo.svg){: data-zoomable="" .centered-image}
 
 > I ***definitely did not*** skip most of characters that weren't necessary for my example...
 
@@ -217,9 +215,7 @@ So, the UTF-16 code units are `0xD83D` and `0xDCA9`.
 
 The astute and informed readers will note that both UTF-16 and UTF-32 are dependent on the *endianness* of the computer. *Endianness* refers to the order in which the bytes of some data are stored in memory. Computers store things in bytes. A byte is the lowest unit of memory that is addressable, so *the order* essentially relates to the way what byte is assigned what address. If we follow the big-endian system, the most significant byte (the leftmost byte) is assigned the lowest memory address and the least significant byte (the rightmost byte) is assigned the highest memory address. Little-endian does the exact opposite:
 
-<center>
-    <img src="../images/Unicode/endianness.svg" data-zoomable>
-</center>
+![Endianness](../images/Unicode/endianness.svg){: data-zoomable="" .centered-image}
 
 So if we were to represent 💩 in UTF-16 (code units: `0xD83D`, `0xDCA9`) in memory in bytes, it would be different depending on what endianness we're following:
 
@@ -238,9 +234,7 @@ This encoding right here takes all kinds of things all kinds of higher levels an
 
 Unlike UTF-16, there's no subtracting jibber-jabber going on - you take the codepoint, then put the bits as required into some bytes, convert it to it's binary format, put the bits in placeholders of a defined layout which depends on the range in which the code point lies:
 
-<center>
-    <img src="../images/Unicode/u8cprange.svg" data-zoomable>
-</center>
+![UTF-8 Code Point Ranges](../images/Unicode/u8cprange.svg){: data-zoomable="" .centered-image}
 
 The cool thing about this is that the first byte in the encoding actually tells you how many bytes are about to follow. The bytes that follow are called *continuation bytes*. Continuation bytes are always of the form  `10xxxxxx`.
 
