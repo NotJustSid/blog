@@ -274,8 +274,8 @@ header .entry-meta {
 	.entry-content {
 		margin: 40px 25px 20px 25px;
 		padding: 10px 15px;
-		background-color: #fff;
-		box-shadow: 0 0 0 0, 0 6px 12px rgba(#000,0.1);
+		background-color: $background-secondary;
+		box-shadow: 0 0 0 1px rgba($border-color,0.1), 0 6px 12px rgba($black-5,0.1);
 		border-radius: 3px;
 
 		overflow-x: auto;
@@ -355,7 +355,7 @@ header .entry-meta {
 	position: relative;
 	margin: 40px 2px 20px 2px;
 	padding: 40px 15px 25px;
-	background-color: #fff;
+	background-color: $background-secondary;
 	box-shadow: 0 0 0 1px rgba($border-color,0.1), 0 6px 12px rgba(#000,0.1);
 	border-radius: 3px;
 
@@ -389,22 +389,12 @@ header .entry-meta {
 .read-more-content {
 	@include font-size(16);
 
-	// Dotted line underlines for links
-	p > a,
-	li > a {
-		border-bottom: 1px dotted lighten($link-color, 50);
-
-		&:hover {
-			border-bottom-style: solid;
-		}
-	}
-
 	h3 {
 		margin: 0;
 		@include font-rem(28);
 
 		a { 
-			color: $text-color;
+			color: $text-primary;
 		}
 
 		@media #{$medium} {
@@ -429,7 +419,7 @@ header .entry-meta {
 	span { 
 		display: block;
 		@include font-rem(14);
-		color: lighten($base-color,50);
+		color: lighten($text-primary,50);
 	}
 
 	@media #{$medium} {
