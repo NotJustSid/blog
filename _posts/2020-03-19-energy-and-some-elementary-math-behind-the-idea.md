@@ -48,10 +48,8 @@ Here, $$s$$ denotes the displacement. Why $$s$$? Ask humans (and look up my post
 
 Anyhow, let's continue. If you think of the work done by a particular force, it seems logical that the output of **that** force would just be in it's direction. What do I mean by that? This:
 
-<center>
-    <img src="../images/Energy/ElemMath/mayTheDirBeWithYou.svg" style="background-color: #1e1e1eff; height: 450px" data-zoomable><br>
-    <sub style="font-family: cursive">May the direction be with you.</sub>
-</center>
+![May the direction be with you](../images/Energy/ElemMath/mayTheDirBeWithYou.svg){: .centered-image data-zoomable="" style="background-color: #1e1e1eff; height: 450px"}
+*May the direction be with you*
 
 The thing is that this direction thingy is true for all point-like objects. In most of basic mechanics, we assume that an object is a point object, or that the force's point of application is the object's center of mass. What is the *center of mass*? Well, that requires a separate talk. For now, think of it as a predefined point in a body which sums up all the movement of the body. You can easily replace the whole body with its center of mass for some type of calculations. Anyhow, we'll delve into this later.
 
@@ -59,10 +57,8 @@ The thing is that this direction thingy is true for all point-like objects. In m
 
 Now consider a point object in two dimensions acted on by multiple forces. In this case, the net movement would be in some other direction depending on how large the forces are and their directions. Here's an example:
 
-<center>
-    <img src="../images/Energy/ElemMath/directiondimensions.svg" style="background-color: #1e1e1eff; height: 450px" data-zoomable><br>
-    <sub style="font-family: cursive">May the direction be IN you.</sub>
-</center>
+![May the direction be IN you](../images/Energy/ElemMath/directiondimensions.svg){: .centered-image data-zoomable="" style="background-color: #1e1e1eff; height: 450px"}
+*May the direction be IN you*
 
 #### Vector Addition
 
@@ -78,10 +74,8 @@ I won't bother you with the mathematics for the calculation of the net direction
 
 What you can do know for now is that the resultant vector for the addition of two vectors can be found out using a triangle forming thingy. Here's how:
 
-<center>
-    <img src="../images/Energy/ElemMath/additionOfVecs.png"><br>
-    <sub style="font-family: cursive">Sum it up man!</sub>
-</center>
+![Sum it up man!](../images/Energy/ElemMath/additionOfVecs.png){: .centered-image data-zoomable=""}
+*Sum it up man!*
 
 Say you have vector $$\vec{a}$$ (we usually write vectors with boldfaces as in $$\mathbf{a}$$, or with arrows on top of 'em) with a direction kinda north, and another vector $$\vec{b}$$ going kinda east. We make sure the tail of one arrow points to the other vectors head. This can be done by shifting either of the vectors parallel to the other (if they aren't already lined up obviously). The resultant is the line completing the triangle. It's direction is from one vector's tail to the other vector's head. As in the image, if you shift both of these and try it out, you get a parallelogram. The resultant is one of the diagonals. So, some folks call it the parallelogram law.
 
@@ -95,9 +89,7 @@ That's a lot of direction talk. How does all this relate to Work? If a body has 
 
 Imagine this situation:
 
-<center>
-    <img src="../images/Energy/ElemMath/workDoneDotProd.png"><br>
-</center>
+![Work done dot product](../images/Energy/ElemMath/workDoneDotProd.png){: .centered-image data-zoomable=""}
 
 To do what we want to do, we would take the net displacement and resolve it into *its components*. Components are separate magnitudes along different directions. The component along the direction of our force should be it's *output*. The one completely perpendicular to our force shouldn't have resulted due to this force. If the angle between the net direction and the force is $$\theta$$, then the net displacement **by our force** turns out to be $$s \cdot cos(\theta)$$ (the displacement times the cosine of the angle $$\theta$$).
 

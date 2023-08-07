@@ -44,12 +44,11 @@ However, my fate has decided that I not code for sometime. My laptop is still no
 
 > Update: Laptop has been back from repair, just finished getting all basic necessitites (required by me) set up. (ALMOST). More on my horrendous experience and stuff later in the next post. For now, enjoy this FiraCode Snippet:
 
-<center>
-<img src="../images/FontLove/firacode_demo.png" alt="FiraCodeeee"><br>
-<caption>:fire:aCode</caption>
-</center>
 
-You can check <a href="http://www.0x08.org/fonts/FiraCode/specimen.html" target="_blank">this</a> site out for a small static demo.
+![FiraCodeee](../images/FontLove/firacode_demo.png){:data-zoomable="" .centered-image}
+*:fire:aCode*
+
+You can check [this](http://www.0x08.org/fonts/FiraCode/specimen.html"){:target="_blank"} site out for a small static demo.
 
 ## Yeah this one is small
 

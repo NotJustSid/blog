@@ -23,11 +23,7 @@ My blog, **GIA** (pronounced like *Guy-a*) is supposed to be a way for me to doc
 
 # The journey so far
 
-<p>
-<center>
-  <img src="../images/about-illustration.svg" style="border-radius: 10px" data-zoomable>
-</center>
-</p>
+![About Illustration](../images/about-illustration.svg){:data-zoomable="" .centered-image}
 
 Alright, so the guy aka Sid aka me is pretty lazy at times. Sometimes he's struggling through something, or well he's just looking for excuses. At times, he's extremely dedicated and that's when the real stuff happened. I created the blog with the sole purpose of learning about Jekyll and GitHub Pages. This want for knowledge evolved into a want for sharing knowledge with my next few posts. Up next, I decided my blog with almost no readers (as of now, but that's definitely gonna change!) should have a way for people to comment (which is fully functional right now - well not really, but it works for the most part 😅)
 
