@@ -4,7 +4,6 @@ title: 'Blog Revamp: Project GIA'
 description: This blog is supposed to be an arsenal of information. Or is it?
 date: 2021-11-02
 image:
-  path: /images/
   feature: GIARevamp/header.svg
 ---
 

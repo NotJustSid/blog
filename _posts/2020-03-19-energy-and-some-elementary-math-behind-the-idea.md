@@ -19,7 +19,6 @@ tags:
 - power
 - conservation of energy
 image:
-  path: "images/Energy/Essence/header1.jpg"
   feature: Energy/Essence/header1.jpg
   credit: NASA
   creditlink: https://unsplash.com/@nasa
@@ -50,7 +49,7 @@ Here, $$s$$ denotes the displacement. Why $$s$$? Ask humans (and look up my post
 Anyhow, let's continue. If you think of the work done by a particular force, it seems logical that the output of **that** force would just be in it's direction. What do I mean by that? This:
 
 <center>
-    <img src="/blog/images/Energy/ElemMath/mayTheDirBeWithYou.svg" style="background-color: #1e1e1eff; height: 450px" data-zoomable><br>
+    <img src="../images/Energy/ElemMath/mayTheDirBeWithYou.svg" style="background-color: #1e1e1eff; height: 450px" data-zoomable><br>
     <sub style="font-family: cursive">May the direction be with you.</sub>
 </center>
 
@@ -61,7 +60,7 @@ The thing is that this direction thingy is true for all point-like objects. In m
 Now consider a point object in two dimensions acted on by multiple forces. In this case, the net movement would be in some other direction depending on how large the forces are and their directions. Here's an example:
 
 <center>
-    <img src="/blog/images/Energy/ElemMath/directiondimensions.svg" style="background-color: #1e1e1eff; height: 450px" data-zoomable><br>
+    <img src="../images/Energy/ElemMath/directiondimensions.svg" style="background-color: #1e1e1eff; height: 450px" data-zoomable><br>
     <sub style="font-family: cursive">May the direction be IN you.</sub>
 </center>
 
@@ -80,7 +79,7 @@ I won't bother you with the mathematics for the calculation of the net direction
 What you can do know for now is that the resultant vector for the addition of two vectors can be found out using a triangle forming thingy. Here's how:
 
 <center>
-    <img src="/blog/images/Energy/ElemMath/additionOfVecs.png"><br>
+    <img src="../images/Energy/ElemMath/additionOfVecs.png"><br>
     <sub style="font-family: cursive">Sum it up man!</sub>
 </center>
 
@@ -97,7 +96,7 @@ That's a lot of direction talk. How does all this relate to Work? If a body has 
 Imagine this situation:
 
 <center>
-    <img src="/blog/images/Energy/ElemMath/workDoneDotProd.png"><br>
+    <img src="../images/Energy/ElemMath/workDoneDotProd.png"><br>
 </center>
 
 To do what we want to do, we would take the net displacement and resolve it into *its components*. Components are separate magnitudes along different directions. The component along the direction of our force should be it's *output*. The one completely perpendicular to our force shouldn't have resulted due to this force. If the angle between the net direction and the force is $$\theta$$, then the net displacement **by our force** turns out to be $$s \cdot cos(\theta)$$ (the displacement times the cosine of the angle $$\theta$$).
