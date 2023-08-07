@@ -25,7 +25,7 @@ My blog, **GIA** (pronounced like *Guy-a*) is supposed to be a way for me to doc
 
 <p>
 <center>
-  <img src="/blog/images/about-illustration.svg" style="border-radius: 10px" data-zoomable>
+  <img src="../images/about-illustration.svg" style="border-radius: 10px" data-zoomable>
 </center>
 </p>
 
