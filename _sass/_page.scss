@@ -594,6 +594,7 @@ header .entry-meta {
    ========================================================================== */
 
 mjx-container[display="true"] {
-    overflow: auto;
+    overflow-x: auto;
+	overflow-y: hidden;
 	padding: 2px;
 }
