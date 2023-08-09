@@ -1,0 +1,22 @@
+<dialog class="comment-dialog">
+	<form class="comment-dialog-form" method="POST" action="https://api.staticman.net/v3/entry/github/sid200/blog/master/comments">
+	
+		<input name="options[redirect]" type="hidden" value="htpps://sid200.github.io/blog{{ page.url }}">
+		<input name="fields[page]" type="hidden" value="{{ page.url }}">
+		<input name="options[slug]" type="hidden" value="{{ page.slug }}">
+		<input id="comment-parent" name="fields[reply_to] " type="hidden" value="">
+	
+		<input placeholder="Name" name="fields[name]" class="comment-input" required></input>
+		<input name="fields[email]" placeholder="Email (optional)" type="email" class="comment-input"></input>
+		<textarea name="fields[message]" placeholder="Add a comment" class="comment-input" rows="4" required></textarea>
+	
+		<button class="btn comment-form-btn" onclick="cancelDialog()">Cancel</span>
+		<button type="submit" class="btn comment-form-btn">Send</button>
+	</form>
+</dialog>
+
+<script>
+	function cancelDialog() {
+		document.querySelector('.comment-dialog').close();
+	}
+</script>

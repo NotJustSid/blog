@@ -63,23 +63,16 @@
   </article>
 </div><!-- /#main -->
 
-<div id="comments">
+{% include comment-dialog.html %}
 
-  <div id="commentNew">
-
-  {% include comments-new.html %}
-
+{% assign comments = site.data.comments | where: "page", page.url %}
+{% if comments.size > 0 %}
+  <div id="comments">
+    <div id="comment-feed">
+      {% include comments.html %}
+    </div>
   </div>
-
-  <div id="commentList">
-
-      <div id="commentsFeed">
-          {% include comments.html %}
-      </div>
-
-  </div>
-
-</div>
+{% endif %}
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
