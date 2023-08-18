@@ -2,6 +2,10 @@
 layout: post
 title: A few updates
 date: 2023-07-29 21:05 +0000
+description: A well deserved update to the whole revamp thing I had planned a year ago
+image:
+  feature: Revamp Update/feature.svg
+  credit: Me!
 ---
 
 > Well hello there future reader! It is the first of July as I am typing this, and I am currently working on the UI/UX of ~~GIA~~ GAIA to make sure it's better than before. It's been more than a year since my last post, and in that post I made a promise to revamp said project. Yes, I introduced a name and stuff, but that's really about it. Right now, however, I really would like to talk about why it has taken me so long to get back to the project.
