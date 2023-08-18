@@ -40,7 +40,9 @@
           <br>
           <br>
           {% if page.series %}
-            <span style="font-size: 2em;">{{page.series.name}} Series | Part: {{page.series.part}}</span>
+          <a href="{{site.url}}/series/#{{page.series.name}}-ref">
+            <span class="post-entry-series" style="position: unset; margin-left: unset; margin-top: unset; font-size: 1.4em">{{page.series.name}} Series | Part: {{page.series.part}}</span>
+          </a>    
           {% endif %}
         </p><!-- /.entry-reading-time -->
         {% endif %}
