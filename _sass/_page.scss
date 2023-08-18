@@ -238,7 +238,7 @@ body {
 		margin: 4px;
 		color: #fff;
 		border-radius: 3px;
-		background-color: lighten($base-color,50);
+		background-color: $accent;
 
 		span {
 			float: left;
@@ -246,12 +246,13 @@ body {
 		}
 
 		.count {
-			background-color: lighten($base-color,40);
+			color: $text-secondary;
+			background-color: $secondary;
 			border-radius: 0 3px 3px 0;
 		}
 
 		&:hover {
-			background-color: lighten($base-color,40);
+			background-color: $primary;
 		}
 	}
 
