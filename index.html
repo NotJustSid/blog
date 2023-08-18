@@ -15,9 +15,11 @@ image:
 <div class="post-entry">
 	<div class="post-entry-img-meta-container">
 		{% if post.series %}
+		<a href="{{ site.url }}/series#{{post.series.name}}-ref" class="post-entry-series-anchor">
 			<div class="post-entry-series">
 				<span>{{post.series.name}} Series | Part {{post.series.part}}</span>
 			</div>
+		</a>
 		{% endif %}
 		{% if post.image.feature %}
         	<a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">

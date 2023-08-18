@@ -468,8 +468,8 @@ header .entry-meta {
 	}
 
 	article {
-		background-color: #fff;
-		box-shadow: 0 0 0 0, 0 6px 12px rgba($base-color,0.1);
+		background-color: $background-secondary;
+		box-shadow: 0 0 0 1px rgba($border-color,0.1), 0 6px 12px rgba(#000,0.1);
 		border-radius: 3px;
 		margin-bottom: 20px;
 		padding: 25px 15px;

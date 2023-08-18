@@ -1,0 +1,34 @@
+---
+layout: post-index
+title: All Series
+description: "A repository of all the series"
+comments: false
+image:
+  feature: Revamp Update/feature.svg
+---
+
+{% assign seriesNames = "" | split: ',' %}
+
+{% for post in site.posts %}
+    {% if post.series %}
+        {% unless seriesNames contains post.series.name %}
+            {% assign seriesNames = seriesNames | push: post.series.name %}
+        {% endunless %}
+    {% endif %}
+{% endfor %}
+
+{% for series in seriesNames %}
+    <article class="archiveItem">
+        <h2 id="{{ series }}-ref">{{ series }} Series</h2>
+        <ul>
+            {% for post in site.posts %}
+                {% if post.series %}
+                    {% if post.series.name == series %}
+                        <li class="entry-title archiveTitle"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="meta-archive-list">{{ post.title }} (Part {{post.series.part}})</a></li>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </article>
+{% endfor %}
+
