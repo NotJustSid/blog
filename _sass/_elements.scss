@@ -189,38 +189,35 @@ svg:not(:root) {
    Tooltips
    ========================================================================== */
 
-/* Tooltip container */
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  cursor: help;
+  
+  // Add an underline to the tooltip
+  // text-decoration: underline;
+  // text-decoration-color: $secondary;
+  // text-decoration-thickness: 2px;
+  // text-underline-offset: 2px;
+
+  color: $secondary;
 }
 
-/* Tooltip text */
-.tooltip .tooltiptext {
-  font-size: small;
-  visibility: hidden;
-  width: 200px;
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 5px;
-  border-radius: 6px;
-
-  /* Position the tooltip text */
+.tooltip::before {
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  top: -3px;
   left: 50%;
-  margin-left: -60px;
-
-  /* Fade in tooltip */
-  opacity: 0;
-  transition: opacity 0.3s;
+  
+  width: max-content;
+  padding: 0px 4px;
+  background-color: $secondary;
+  color: $text-secondary;
+  border-radius: 3px;
+  transform: translateX(-50%) translateY(-100%);
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+.tooltip:hover::before {
+  content: attr(data-tooltip);
+  font-style: normal;
+  font-size: medium;
 }
