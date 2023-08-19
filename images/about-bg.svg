@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 508 285.75"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="bitmap.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#262626"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="false"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#a4a4a4"
+     inkscape:document-units="mm"
+     labelstyle="default"
+     inkscape:zoom="0.79433943"
+     inkscape:cx="998.31378"
+     inkscape:cy="612.45858"
+     inkscape:window-width="2560"
+     inkscape:window-height="1566"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#191919;fill-opacity:1;stroke-width:0.819888"
+       id="rect1"
+       width="508"
+       height="285.75"
+       x="-7.8548279e-14"
+       y="-1.9539925e-14" />
+    <g
+       id="g46">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.2021px;font-family:Orkney;-inkscape-font-specification:Orkney;fill:#191919;fill-opacity:1;stroke-width:1.16024"
+         x="78.480476"
+         y="152.40642"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.2021px;font-family:Orkney;-inkscape-font-specification:Orkney;fill:#ffffff;fill-opacity:1;stroke-width:1.16024"
+           x="78.480476"
+           y="152.40642">Who? What? Why?</tspan></text>
+    </g>
+    <path
+       d="m 174.78672,152.78797 c -0.58577,0 -1.10786,-0.21648 -1.56629,-0.64944 -0.43296,-0.43296 -0.64943,-0.96779 -0.64943,-1.60449 0,-0.58576 0.21647,-1.09512 0.64943,-1.52808 0.45843,-0.45843 0.98052,-0.68764 1.56629,-0.68764 0.61123,0 1.13333,0.22921 1.56628,0.68764 0.45843,0.43296 0.68764,0.94232 0.68764,1.52808 0,0.6367 -0.22921,1.17153 -0.68764,1.60449 -0.43295,0.43296 -0.95505,0.64944 -1.56628,0.64944 z"
+       id="text42"
+       style="font-size:38.2021px;font-family:Orkney;-inkscape-font-specification:Orkney;fill:#7fff80;fill-opacity:1;stroke-width:1.16024"
+       aria-label="?"
+       sodipodi:nodetypes="scssscscs" />
+    <path
+       d="m 303.79572,152.78797 c -0.58577,0 -1.10786,-0.21648 -1.56629,-0.64944 -0.43296,-0.43296 -0.64943,-0.96779 -0.64943,-1.60449 0,-0.58576 0.21647,-1.09512 0.64943,-1.52808 0.45843,-0.45843 0.98052,-0.68764 1.56629,-0.68764 0.61123,0 1.13333,0.22921 1.56628,0.68764 0.45843,0.43296 0.68764,0.94232 0.68764,1.52808 0,0.6367 -0.22921,1.17153 -0.68764,1.60449 -0.43295,0.43296 -0.95505,0.64944 -1.56628,0.64944 z"
+       id="path45"
+       style="font-size:38.2021px;font-family:Orkney;-inkscape-font-specification:Orkney;fill:#7fff80;fill-opacity:1;stroke-width:1.16024"
+       aria-label="?"
+       sodipodi:nodetypes="scssscscs" />
+    <path
+       d="m 421.65072,152.78797 c -0.58577,0 -1.10786,-0.21648 -1.56629,-0.64944 -0.43296,-0.43296 -0.64943,-0.96779 -0.64943,-1.60449 0,-0.58576 0.21647,-1.09512 0.64943,-1.52808 0.45843,-0.45843 0.98052,-0.68764 1.56629,-0.68764 0.61123,0 1.13333,0.22921 1.56628,0.68764 0.45843,0.43296 0.68764,0.94232 0.68764,1.52808 0,0.6367 -0.22921,1.17153 -0.68764,1.60449 -0.43295,0.43296 -0.95505,0.64944 -1.56628,0.64944 z"
+       id="path46"
+       style="font-size:38.2021px;font-family:Orkney;-inkscape-font-specification:Orkney;fill:#7fff80;fill-opacity:1;stroke-width:1.16024"
+       aria-label="?"
+       sodipodi:nodetypes="scssscscs" />
+  </g>
+</svg>

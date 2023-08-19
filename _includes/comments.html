@@ -1,62 +1,83 @@
-{% assign commentSize = site.data.comments | where: "page", page.url %}
-<h1 id="commentFeedTitle" style="color: #444; letter-spacing: 2px">Comments({{ commentSize.size }})</h1>
-
 {% assign cmts = site.data.comments | where: "page", page.url | where: "reply_to", "" | sort:"date" | reverse %}
 
 {% for comment in cmts %}
-  	{% assign commentData = comment %}
-  	{% assign replies = site.data.comments | where: "page", page.url | where: "reply_to", commentData._id |where: "part", page.part%}
+  	{% assign replies = site.data.comments | where: "page", page.url | where: "reply_to", comment._id |where: "part", page.part%}
 
-    <div class="commentElement">
+    <div class="comment-element">
 		
-		<div class="cHeader">
+		<div class="comment-header">
         
-			<span class="cName">
-            	{{ commentData.name }}
+			<span class="comment-name">
+            	{{ comment.name }}
         	</span>
 
-        	<small class="cDate">
-          		on {{ commentData.date | date_to_long_string }}
+        	<small class="comment-date">
+          		on {{ comment.date | date_to_long_string }}
         	</small>
 
         	&nbsp;
 
-        	<a class="cReply" href="#commentNew" onclick="document.getElementById('commentBoxTitle').innerText = `Reply To {{ commentData.name }}`;document.getElementById('comment-parent').value = '{{ commentData._id }}';document.getElementById('commentReplyCancel').style.display = 'block'">
+        	<a class="comment-reply-option" onclick="reply()">
           		<small>Reply</small>
         	</a>
 
       	</div>
 
-      	<hr class="commentIdLine">
-
-      	<div class="cMessage">
-          	{{ commentData.message strip_html | markdownify | smartify  }}
+      	<div class="comment-message">
+          	{{ comment.message strip_html | markdownify | smartify  }}
       	</div>
-     
+		
+		  {% if replies.size > 0 %}
+			
+			<div class="comment-replies" data-main-comment-id='{{comment._id}}' style="display: none;">
+				{% for reply in replies%}
+				  <div class="comment-element">
+					  <div class="comment-header">
+						  <span class="comment-name">
+							  {{ reply.name }}
+						  </span>
+				  
+						  <small class="comment-date">
+						  on {{ reply.date | date_to_long_string }}
+						  </small>
+						  
+					  </div>
+								  
+					  <div class="comment-message">
+						  {{ reply.message strip_html | markdownify | smartify  }}
+					  </div>
+				  </div>
+			  	{% endfor %}
+			</div>
+			  
+	  	   {% endif %}
+
 	</div>
 
-	{% if replies %}
-			{% for reply in replies%}
-				<div class="replyElement">
-					<div class="cHeader">
-						<span class="cName">
-							{{ reply.name }}
-						</span>
-				
-						<small class="cDate">
-						on {{ reply.date | date_to_long_string }}
-						</small>
-						
-					</div>
-				
-					<hr class="commentIdLine">
-				
-					<div class="cMessage">
-						{{ reply.message strip_html | markdownify | smartify  }}
-					</div>
-				</div>
-			{% endfor %}
+	{% if replies.size > 0 %}
+		<button class="btn view-replies-btn" type="button" onclick="toggleReplyDisplay(`{{comment._id}}`, this)">View Replies</button>
 	{% endif %}
 
-
 {% endfor %}
+
+<script>
+	function toggleReplyDisplay(mainCommentId, button){
+		let replyElement = document.querySelector(`[data-main-comment-id='${mainCommentId}']`);
+		if (replyElement.style.display == 'none'){
+			replyElement.style.display = 'unset';
+			button.innerText = 'Hide Replies';
+		}
+		else{
+			replyElement.style.display = 'none';
+			button.innerText = 'View Replies';
+		}
+	}
+
+	function reply() {
+		// `Reply To {{ commentData.name }}`;
+		// document.getElementById('comment-parent').value = '{{ commentData._id }}';
+
+		const dialog = document.querySelector('.comment-dialog');
+		dialog.show();
+	}
+</script>

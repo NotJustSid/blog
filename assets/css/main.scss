@@ -13,6 +13,7 @@ sitemap: false
 
 // Partials
 @import "variables";
+@import "colors";
 @import "mixins";
 @import "reset";
 @import "vendor/font-awesome/font-awesome";
@@ -20,7 +21,6 @@ sitemap: false
 @import "site";
 @import "typography";
 @import "syntax";
-// @import "coderay";
 @import "grid";
 @import "elements";
 @import "animations";
@@ -34,3 +34,6 @@ sitemap: false
 @import "preloader";
 
 @import "scrollbar";
+
+// Revamped
+@import "index";

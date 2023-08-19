@@ -4,45 +4,54 @@ title: Generally An Information Arsenal
 tags: [math, blog, blog posts, physics, development, mathematics, science, software, computer, social, casual, GAIA]
 comments: false 
 image:
-  feature: landing-header.png
+  feature: landing-header.svg
 ---
 
 {% for post in paginator.posts %}
-{% if post.unindex %}
-  {% continue %}
-{% endif %}
-<article class="hentry mainPage-darkMode">
-  <header>
-    {% if post.image.feature %}
-      <div class="entry-image-index">
-        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}"></a>
-      </div><!-- /.entry-image -->
-    {% endif %}
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span>
-      {% if site.reading_time %}
-      <span class="entry-reading-time">
-        <i class="fa fa-clock-o"></i>
-        {% include read-time-index.html %}
-      </span><!-- /.entry-reading-time -->
-      {% endif %}
-    </div><!-- /.entry-meta -->
-    {% if post.link %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" class="permalink darkMode-noGray" rel="bookmark" title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
-    {% else %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url" class="darkMode-noGray">
-        {{ post.title }} <br>  
-      </a>
-      {% if post.series %}
-         <font size="4em" class="partTag" style="  border-style: solid; border-width:thin; border-radius: 0.3em; padding: 0.25em;"> {{post.seriesname}} Series | Part: {{ post.part }}</font> 
-      {% endif %}
-    </h1>
-    {% endif %}
-  </header>
-  <div class="entry-content">
-    {{ post.description }}
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
+	{% if post.unindex %}
+		{% continue %}
+	{% endif %}
+
+<div class="post-entry">
+	<div class="post-entry-img-meta-container">
+		{% if post.series %}
+		<a href="{{ site.url }}/series#{{post.series.name}}-ref" class="post-entry-series-anchor">
+			<div class="post-entry-series">
+				<span>{{post.series.name}} Series | Part {{post.series.part}}</span>
+			</div>
+		</a>
+		{% endif %}
+		{% if post.image.feature %}
+        	<a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
+				<img class="post-entry-image" src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}">
+			</a>		
+		{% endif %}
+		<div class="post-entry-meta">
+			<span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>
+
+			{% if site.reading_time %}
+			<span class="entry-reading-time">
+			<i class="fa fa-clock-o"></i>
+			{% if page.reading_time_override %}
+			Reading time ~ {{page.reading_time_override}} minutes
+			{% else %}
+			{% include read-time.html %}
+			{% endif %}
+			</span><!-- /.entry-reading-time -->
+			{% endif %}
+		</div>
+	</div>
+    
+    <div class="post-entry-title">
+      <h2>
+        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>		
+      </h2>
+    </div>
+    <div class="post-entry-description">
+        {% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 140 }}{% endif %}
+    </div>
+</div>
+
 {% endfor %}
 
 {% include pagination.html %}

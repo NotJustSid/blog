@@ -46,8 +46,8 @@
 		cursor: pointer;
 		outline: none;
 		border-radius: 0 0 3px 0;
-		opacity: 0.6;
-		box-shadow: 0 12px 24px rgba(#000,0.4);
+		opacity: 0.7;
+		box-shadow: 0 0 0 1px rgba($border-color,0.1), 0 6px 12px rgba($black-5,0.1);
 		transition: 0.4s ease-in-out;
 
 		&:hover {
@@ -160,7 +160,7 @@
 	  overflow-x: hidden;
 		opacity: 0;
 		pointer-events: none;
-		box-shadow: 0 12px 24px rgba(#000,0.4);
+		box-shadow: 0 0 0 1px rgba($border-color,0.1), 0 6px 12px rgba($black-5,0.1);
 		-webkit-transform: translateY(10px);
 		-moz-transform: translateY(10px);
 		transform: translateY(10px);
@@ -190,7 +190,7 @@
 
 	.dl-submenu {
 		border-radius: 3px;
-		box-shadow: 0 12px 24px rgba(#000,0.4);
+		box-shadow: 0 0 0 1px rgba($border-color,0.1), 0 6px 12px rgba($black-5,0.1);
 
 		.btn {
 			margin-bottom: 0;
@@ -315,45 +315,4 @@ All this is done for any sub-level being entered.
 
 .dl-menuopen li {
 	display: block
-}
-
-.darkModeBtn{
-	position: fixed;
-	// top: unset;
-	bottom: 0;
-	left: 0;
-	z-index: 999;
-	// margin-top: 4em;
-	list-style-type: none;
-	padding-inline-start: 0.1em;
-	background-color: rgba(43, 43, 43, 0.5);
-	border: none;
-	cursor: pointer;
-	border-radius: 100px;
-	padding: 3px;
-	opacity: 0.4;
-	box-shadow: 0 12px 24px rgba(#000,0.4);
-	transition: 0.4s ease-in-out;
-
-	&:hover{
-		background-color: rgba(59, 59, 59, 0.5);
-		opacity: 1;
-	}
-
-	@media #{$medium} {
-		position: fixed;
-		max-width: 175px;
-		// top: unset;
-		bottom: 25px;
-		left: 25px;
-	}
-
-	@media #{$small} {
-		position: fixed;
-		max-width: 175px;
-		// top: unset;
-		bottom: 5px;
-		left: 10px;
-		opacity: 1;
-	}
 }
