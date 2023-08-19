@@ -12,8 +12,6 @@ tags:
 - function
 - pointers
 image:
-  path: /images/
-  background: prime-bg.jpg
   feature: LambdasInCPP/feature.svg
   credit: Carbon
   creditlink: https://carbon.now.sh/

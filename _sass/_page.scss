@@ -6,20 +6,13 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	background-color: $body-color;
+	background-color: $background-primary;
 }
 
 /* 
    Main content
    ========================================================================== */
 //Entry Cards...
-
-.mainPage-darkMode{
-	@media #{$small} {
-		margin-left: 20px;
-		margin-right: 20px;
-	}
-}
 
 .entry,
 .hentry {
@@ -245,7 +238,7 @@ body {
 		margin: 4px;
 		color: #fff;
 		border-radius: 3px;
-		background-color: lighten($base-color,50);
+		background-color: $accent;
 
 		span {
 			float: left;
@@ -253,12 +246,13 @@ body {
 		}
 
 		.count {
-			background-color: lighten($base-color,40);
+			color: $text-secondary;
+			background-color: $secondary;
 			border-radius: 0 3px 3px 0;
 		}
 
 		&:hover {
-			background-color: lighten($base-color,40);
+			background-color: $primary;
 		}
 	}
 
@@ -281,8 +275,8 @@ header .entry-meta {
 	.entry-content {
 		margin: 40px 25px 20px 25px;
 		padding: 10px 15px;
-		background-color: #fff;
-		box-shadow: 0 0 0 0, 0 6px 12px rgba(#000,0.1);
+		background-color: $background-secondary;
+		box-shadow: 0 0 0 1px rgba($border-color,0.1), 0 6px 12px rgba($black-5,0.1);
 		border-radius: 3px;
 
 		overflow-x: auto;
@@ -319,6 +313,18 @@ header .entry-meta {
 		margin: 50px 30px 30px;
 		text-align: center;
 	}
+
+	.centered-image {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	// Centered image caption when required
+	.centered-image + em {
+		display: block;
+		text-align: center;
+	}
 }
 
 .entry-tags {
@@ -340,6 +346,7 @@ header .entry-meta {
 .pagination {
 	margin: 20px 10px;
 	text-align: center;
+	user-select: none;
 
 	ul {
 		display: inline;
@@ -354,6 +361,7 @@ header .entry-meta {
 
 	.current-page {
 		font-weight: 700;
+		text-decoration: underline;
 	}
 }
 
@@ -362,7 +370,7 @@ header .entry-meta {
 	position: relative;
 	margin: 40px 2px 20px 2px;
 	padding: 40px 15px 25px;
-	background-color: #fff;
+	background-color: $background-secondary;
 	box-shadow: 0 0 0 1px rgba($border-color,0.1), 0 6px 12px rgba(#000,0.1);
 	border-radius: 3px;
 
@@ -396,22 +404,12 @@ header .entry-meta {
 .read-more-content {
 	@include font-size(16);
 
-	// Dotted line underlines for links
-	p > a,
-	li > a {
-		border-bottom: 1px dotted lighten($link-color, 50);
-
-		&:hover {
-			border-bottom-style: solid;
-		}
-	}
-
 	h3 {
 		margin: 0;
 		@include font-rem(28);
 
 		a { 
-			color: $text-color;
+			color: $text-primary;
 		}
 
 		@media #{$medium} {
@@ -436,7 +434,7 @@ header .entry-meta {
 	span { 
 		display: block;
 		@include font-rem(14);
-		color: lighten($base-color,50);
+		color: lighten($text-primary,50);
 	}
 
 	@media #{$medium} {
@@ -471,8 +469,8 @@ header .entry-meta {
 	}
 
 	article {
-		background-color: #fff;
-		box-shadow: 0 0 0 0, 0 6px 12px rgba($base-color,0.1);
+		background-color: $background-secondary;
+		box-shadow: 0 0 0 1px rgba($border-color,0.1), 0 6px 12px rgba(#000,0.1);
 		border-radius: 3px;
 		margin-bottom: 20px;
 		padding: 25px 15px;
@@ -597,6 +595,7 @@ header .entry-meta {
    ========================================================================== */
 
 mjx-container[display="true"] {
-    overflow: auto;
+    overflow-x: auto;
+	overflow-y: hidden;
 	padding: 2px;
 }

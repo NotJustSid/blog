@@ -20,8 +20,6 @@ tags:
 - mark 1
 - mark 2
 image:
-  path: "/images/ComputerBugsHappening/header.jpg"
-  background: ComputerBugsHappening/bg.jpg
   feature: ComputerBugsHappening/header.jpg
   credit: Markus Spiske
   creditlink: https://unsplash.com/@markusspiske
@@ -102,9 +100,3 @@ This concludes my talk, I er.. I, I don't have anything to say.
 Be prepared with some *energy*, for the next topic of my next blog post is gonna be something ***sciency***.
 
 Have a nice day!
-
----
-
-**Background Credits**: [Adelin Preda](https://unsplash.com/@adelinpreda)
-
----

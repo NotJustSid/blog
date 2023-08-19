@@ -4,9 +4,9 @@ title: What's ENERGY?!?
 description: An Energy 101 <em>intro</em> 'talk'. Designed to provide the Essence of Energy(?). Nothing too formal. You just read and read. (with
   Energy?)
 mathjax: true
-series: true
-seriesname: Energy
-part: 1
+series:
+  name: Energy
+  part: 1
 modified: 
 tags:
 - energy
@@ -20,8 +20,6 @@ tags:
 - power
 - conservation of energy
 image:
-  path: "images/Energy/Essence/header1.jpg"
-  background: Energy/Essence/bg1.jpg
   feature: Energy/Essence/header1.jpg
   credit: NASA
   creditlink: https://unsplash.com/@nasa

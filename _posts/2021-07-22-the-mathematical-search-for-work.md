@@ -3,12 +3,10 @@ layout: post
 title: The mathematical search for work
 description: With Vector Calculus 👀
 mathjax: true
-series: true
-seriesname: Energy
-part: 3
+series:
+  name: Energy
+  part: 3
 image:
-  path: /images/
-  background: prime-bg.jpg
   feature: WorkVectorCalc/feature.svg
   credit: Me!
 date: 2021-08-21
@@ -54,19 +52,11 @@ Seems like a daunting word. Let's see if we can make sense of yet another *whate
 
 Let's look at at the plot of a simple function $$y = f(x) = x^2$$. The way I've written (or well typed) it, I mean to plot the resultant value along the y-axis and get the dependent variables on the x-axis. The plot looks like so:
 
-<p>
-<center>
-  <img src="/blog/images/WorkVectorCalc/xsquared.svg" style="border-radius: 10px" data-zoomable>
-</center>
-</p>
+![xsquared](../images/WorkVectorCalc/xsquared.svg){: data-zoomable="" .centered-image style="border-radius: 10px"}
 
 Hmmm not so interesting. Just a function plot right? Well yes, but no. Yes because yep it's a function plot; no because there's more to it. Let's try to look at this in another way - think of the $$x$$-axis only. In that viewpoint, a function would be nothing but the assignment of a value to each and every point in 1 dimensional space:
 
-<p>
-<center>
-  <img src="/blog/images/WorkVectorCalc/xsquared_scalarfield.svg" data-zoomable>
-</center>
-</p>
+![xsquared_scalarfield](../images/WorkVectorCalc/xsquared_scalarfield.svg){: data-zoomable="" .centered-image}
 
 > The thing is continuous, but I can only **point** out so many points! (Intentional Pun)
 
@@ -76,11 +66,7 @@ This is very close to the definition of a vector field, but the thing is we assi
 
 Similarly, we could also look at the $$f(x, y) = x^2 + y^2$$ (this forms a paraboloid if you look at the 3 dimensional plot of $$z = x^2 + y^2$$) as a scalar field (we visualize the scalar field with a heatmap in this case):
 
-<p>
-<center>
-  <img src="/blog/images/WorkVectorCalc/scalarheatmap.svg" style="border-radius: 10px" data-zoomable>
-</center>
-</p>
+![scalarheatmap](../images/WorkVectorCalc/scalarheatmap.svg){: data-zoomable="" .centered-image style="border-radius: 10px"}
 
 Extending this intuition to vectors should be fairly easy. All we need to do is assign a vector to each point in space. Why would we even need this? There are a lot of practical uses. We could, for example, describe fluid flow using these. The vectors at each point would tell us how the fluid moves and at what rate.
 
@@ -98,19 +84,11 @@ What this says is that the vector assigned to any point $$(x, y)$$ is going to b
 
 The vector field would look like so:
 
-<p>
-<center>
-  <img src="/blog/images/WorkVectorCalc/vectorfield(4, 4).svg" style="border-radius: 10px" data-zoomable>
-</center>
-</p>
+![vectorfield(4, 4)](../images/WorkVectorCalc/vectorfield(4, 4).svg){: data-zoomable="" .centered-image style="border-radius: 10px"}
 
 As we expected. It's already clear that such a plot is going to get super messy due to the plethora of arrows. Because of this, we usually do not capture the magnitude and *normalize* the arrows:
 
-<p>
-<center>
-  <img src="/blog/images/WorkVectorCalc/vectorfield(4, 4)_normalized.svg" style="border-radius: 10px" data-zoomable>
-</center>
-</p>
+![vectorfield(4, 4)_normalized](../images/WorkVectorCalc/vectorfield(4, 4)_normalized.svg){: data-zoomable="" .centered-image style="border-radius: 10px"}
 
 So we **rescale** the arrows such that their length lies between $$0$$ and $$1$$ (this is easily done by dividing the original vector field expression by the magnitude of the vector).
 
@@ -151,19 +129,11 @@ Alright, fine. I'll help you out:
 
 If you understood why we expect what we expect, you've earned the plot:
 
-<p>
-<center>
-  <img src="/blog/images/WorkVectorCalc/vectorfield(x, y).svg" style="border-radius: 10px" data-zoomable>
-</center>
-</p>
+![vectorfield(x, y)](../images/WorkVectorCalc/vectorfield(x, y).svg){: data-zoomable="" .centered-image style="border-radius: 10px"}
 
 And the cleaner, normalized version:
 
-<p>
-<center>
-  <img src="/blog/images/WorkVectorCalc/vectorfield(x, y)_normalized.svg" style="border-radius: 10px" data-zoomable>
-</center>
-</p>
+![vectorfield(x, y)_normalized](../images/WorkVectorCalc/vectorfield(x, y)_normalized.svg){: data-zoomable="" .centered-image style="border-radius: 10px"}
 
 Enough with the vector fields. I think we get the point now. With that construct developed, let's move on to the other one!
 
@@ -199,11 +169,7 @@ $$\vec{r}(t) = \langle t, 0 \rangle \qquad 0 \leq t \leq 5$$
 
 Let's step it up! We want to describe the path along the line $$x = y+2$$ starting at $$(-2, -4)$$ and ending at $$(6, 4)$$. Something like this:
 
-<p>
-<center>
-  <img src="/blog/images/WorkVectorCalc/line_path.svg" style="border-radius: 10px" data-zoomable>
-</center>
-</p>
+![line_path](../images/WorkVectorCalc/line_path.svg){: data-zoomable="" .centered-image style="border-radius: 10px"}
 
 This should be easily to deal with as well. Like before, we'll choose $$x = t$$. Since $$y = x - 2$$, we have $$y = t-2$$. $$t$$ starts at $$-2$$ and ends at $$6$$, so
 
@@ -237,11 +203,7 @@ So without any further ado, let's *work* on finding work!
 
 Let's work with what we have so far. Imagine a force described by a vector field. And imagine some path $$C$$. Can't imagine? Here, this image will help:
 
-<p>
-<center>
-  <img src="/blog/images/WorkVectorCalc/work_1.svg" data-zoomable>
-</center>
-</p>
+![work_1](../images/WorkVectorCalc/work_1.svg){: data-zoomable="" .centered-image}
 
 The orange arrows denote the vector field we were talking about. The green curve is our path $$C$$ and the arrows on it signify the direction of our path. We need to find the work done by the force as something goes along this path. This task seems pretty daunting at first, but let's do the best we can.
 
@@ -253,11 +215,7 @@ Notice that we only care about the magnitude of this force and not its direction
 
 > This tangent vector **needs** to be a unit vector because we only want the unscaled magnitude of the component. So we'll call it the **unit tangent vector**.
 
-<p>
-<center>
-  <img src="/blog/images/WorkVectorCalc/work_2.svg" data-zoomable>
-</center>
-</p>
+![work_2](../images/WorkVectorCalc/work_2.svg){: data-zoomable="" .centered-image}
 
 Well, this is all fine, but this just delegates our task; We now need to find the expression for the unit tangent vector. Oh and we also need to find the small length this force applies to!
 
@@ -272,19 +230,11 @@ Both of these seem like properties of the path itself. The tangent vector task s
 
   can be interpreted geometrically as the direction of the path from $$A$$ to $$B$$!
 
-  <p>
-  <center>
-    <img src="/blog/images/WorkVectorCalc/work_3.svg" style="height: 250px" data-zoomable>
-  </center>
-  </p>
+  ![work_3](../images/WorkVectorCalc/work_3.svg){: data-zoomable="" .centered-image style="height: 250px"}
 
 Okay, let's find the direction for the small section. At the point of concern, the position vector will be $$\vec{r}(t)$$ for some $$t$$. Because our path is *parametrized* by $$t$$, we can increase this $$t$$ by a small amount $$\Delta t$$ to consider a nearby position vector. This position vector would be $$\vec{r}(t + \Delta t)$$. The difference of these two vectors will give us the direction:
 
-<p>
-  <center>
-    <img src="/blog/images/WorkVectorCalc/work_4.svg" data-zoomable>
-  </center>
-</p>
+![work_4](../images/WorkVectorCalc/work_4.svg){: data-zoomable="" .centered-image}
 
 Hmmm. How do we proceed now? We don't really have a certain value for this $$\Delta t$$, so what do we do? Hey! If we divide the difference by $$\Delta t$$, we get the vector
 
@@ -322,11 +272,7 @@ $$\left\Vert \vec{r}'(t) \right\Vert = \sqrt{x'(t)^2 + y'(t)^2}$$
 
 Alright, the last puzzle in the box: the small length. This should be fairly easy to find if we consider the changes in $$x$$ and $$y$$ and then apply Pythagoras' Theorem:
 
-<p>
-<center>
-  <img src="/blog/images/WorkVectorCalc/work_5.svg" data-zoomable>
-</center>
-</p>
+![work_5](../images/WorkVectorCalc/work_5.svg){: data-zoomable="" .centered-image}
 
 How is this fairly easy? We still have the $$\Delta t$$ lingering. Well, not really; we'll do something similar to what we did before:
 
@@ -450,11 +396,7 @@ $$\vec{r}'(t) = \langle -\sin(t), \cos(t) \rangle$$
 
 Our aim is to find the work done using the two expressions in the order that they appeared.
 
-<p>
-<center>
-  <img src="/blog/images/WorkVectorCalc/work_6.svg" data-zoomable>
-</center>
-</p>
+![work_6](../images/WorkVectorCalc/work_6.svg){:data-zoomable="" .centered-image}
 
 As we can see from the figure, the work we should get must be $$0$$ since the force is perpendicular to the direction of motion all the way.
 
