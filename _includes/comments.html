@@ -4,7 +4,7 @@
   	{% assign replies = site.data.comments | where: "page", page.url | where: "reply_to", comment._id |where: "part", page.part%}
 
     <div class="comment-element">
-		
+
 		<div class="comment-header">
         
 			<span class="comment-name">
@@ -75,7 +75,7 @@
 
 	function reply(parentName, parentId) {
 		document.querySelector('.comment-dialog-title').textContent = `Reply to ${parentName}`;
-		// document.getElementById('comment-parent').value = '{{ commentData._id }}';
+		document.querySelector('#comment-reply-to-field').value = parentId;
 
 		const dialog = document.querySelector('.comment-dialog');
 		dialog.show();
