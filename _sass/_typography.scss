@@ -76,11 +76,11 @@ figcaption {
 
 .notice {
 	margin-top: 1.5em;
-	padding: .5em 1em;
+	padding: .8em 1em;
 	text-indent: 0;
 	@include font-rem(14);
-	background-color: $body-color;
-	border: 1px solid darken($body-color,20);
+	background-color: $background-notice;
+	font-style: italic;
 	border-radius: 3px;
 }
 
