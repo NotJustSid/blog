@@ -110,7 +110,7 @@ svg:not(:root) {
 
   &:hover {
     background-color: $accent;
-    color: $secondary;
+    color: $text-primary;
     border-color: $accent;
   }
 }
