@@ -17,7 +17,7 @@
 
         	&nbsp;
 
-        	<a class="comment-reply-option" onclick="reply()">
+        	<a class="comment-reply-option" onclick="reply(`{{comment.name}}`, `{{comment._id}}`)">
           		<small>Reply</small>
         	</a>
 
@@ -73,8 +73,8 @@
 		}
 	}
 
-	function reply() {
-		// `Reply To {{ commentData.name }}`;
+	function reply(parentName, parentId) {
+		document.querySelector('.comment-dialog-title').textContent = `Reply to ${parentName}`;
 		// document.getElementById('comment-parent').value = '{{ commentData._id }}';
 
 		const dialog = document.querySelector('.comment-dialog');

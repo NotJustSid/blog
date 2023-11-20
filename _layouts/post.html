@@ -65,15 +65,28 @@
   </article>
 </div><!-- /#main -->
 
-{% include comment-dialog.html %}
+{% if page.comments != false%}
+  {% include comment-dialog.html %}
 
-{% assign comments = site.data.comments | where: "page", page.url %}
-{% if comments.size > 0 %}
+  {% assign comments = site.data.comments | where: "page", page.url %}
   <div id="comments">
     <div id="comment-feed">
-      {% include comments.html %}
+      {% if comments.size > 0 %}
+        {% capture comment_panel_content %}
+          {% if comments.size == 1 %}
+            1 comment as of now.
+          {% else %}
+            {{ comments.size }} comments as of now.
+          {% endif %}
+        {% endcapture %}
+        {% include add-comment-panel.html notif_content=comment_panel_content btn_content="Add yours!"%}
+        {% include comments.html %}
+      {% else %}
+        {% include add-comment-panel.html notif_content="There are no comments yet." btn_content="Be the first to comment!"%}
+      {% endif %}
     </div>
   </div>
+
 {% endif %}
 
 <div class="footer-wrapper">
