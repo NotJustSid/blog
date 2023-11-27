@@ -17,7 +17,7 @@ Initially I wanted to post like at least one post a month, and I still want to d
 
 It's not that this doesn't exist in the world outside the internet, but I think the internet can have the effect of amplifying this effect. We want people to think good of ourselves, and that is perhaps the one thing that keeps obstructing GAIA's goal of just sharing *me and my thoughts* in their pristine form.
 
-The promise I want to make myself this time around is to acknowledge the efforts that I put in, and just let things out instead of keeping them hidden. If people want to think, they're free to do so, and I am free to not worry about that. Like I said in my [last post](/on-feeling-better): *Suggestion taken. __Necessary Changes Made__. Moved on.* (Okay yes I added the bolded part this time to better suit it with the theme of this post).
+The promise I want to make myself this time around is to acknowledge the efforts that I put in, and just let things out instead of keeping them hidden. If people want to think, they're free to do so, and I am free to not worry about that. Like I said in my [last post](../on-feeling-better): *Suggestion taken. __Necessary Changes Made__. Moved on.* (Okay yes I added the bolded part this time to better suit it with the theme of this post).
 
 It wouldn't be a *dump* if I didn't transition to other things bugging me. So sudden transition here we go. A few days ago, I messaged a fellow peer of mine about some formalities we had to tend to for a course. These formalities weren't exactly meta-formalities about the course itself, but the content of the course I suppose. Okay well not exactly, but their reply struck me quite a bit. It went along the lines of: 
 
