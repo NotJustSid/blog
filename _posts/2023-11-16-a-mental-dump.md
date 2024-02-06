@@ -4,6 +4,9 @@ title: A Mental Dump
 date: 2023-11-16 00:26 +0000
 description: A collection of all the thoughts and ideas I have had for the past few months. A dump because it seemed implausible that I will otherwise go about doing anything related to them.
 mathjax: true
+image:
+  feature: Mental Dump/feature.svg
+  credit: Me!
 ---
 *Ahoy matey!*{:.tooltip data-tooltip="Haven't used that in a while"} It's been a while since I have posted anything over here. And I'll be honest, it's not like I completely forgot about this place; it's just that every single time some idea popped up, I'd invest a lot of time just thinking about how to make it this perfect thing, and well that never happens does it? So there's that, then a couple of things I just wanted to discuss, and the new promise I want to make to myself and any readers.
 
