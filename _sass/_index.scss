@@ -16,9 +16,12 @@ body {
 	min-width: 95%;
 }
 
+.post-entry-title {
+	padding-left: $post-entry-margin;
+}
+
 .post-entry-title a {
 	color: $text-primary;
-	margin-left: 25px;
 }
 
 .post-entry-img-meta-container {
