@@ -195,10 +195,10 @@ svg:not(:root) {
   cursor: help;
   
   // Add an underline to the tooltip
-  // text-decoration: underline;
-  // text-decoration-color: $secondary;
-  // text-decoration-thickness: 2px;
-  // text-underline-offset: 2px;
+  text-decoration: underline;
+  text-decoration-color: $secondary;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 2px;
 
   color: $secondary;
 }
@@ -209,15 +209,18 @@ svg:not(:root) {
   left: 50%;
   
   width: max-content;
-  padding: 0px 4px;
+  max-width: 200px;
+  padding: .8em 1em;
   background-color: $secondary;
   color: $text-secondary;
   border-radius: 3px;
   transform: translateX(-50%) translateY(-100%);
+
+  line-height: 1.3;  
 }
 
 .tooltip:hover::before {
   content: attr(data-tooltip);
-  font-style: normal;
+  font-style: italic;
   font-size: medium;
 }
