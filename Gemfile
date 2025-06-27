@@ -9,5 +9,5 @@ gem "jekyll-gist"
 gem 'jekyll-compose', group: [:jekyll_plugins]
 gem 'github-pages'
 gem 'jemoji'
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.8"
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
