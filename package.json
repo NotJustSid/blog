@@ -1,0 +1,15 @@
+{
+  "name": "gaia-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal convenience scripts for blog workflow",
+  "scripts": {
+    "serve": "bundle exec jekyll serve --trace --livereload -o",
+    "serveall": "bundle exec jekyll serve --drafts --trace --livereload -o",
+    "draft": "bundle exec jekyll draft",
+    "publish": "bundle exec jekyll publish",
+    "post": "bundle exec jekyll post",
+    "build": "bundle exec jekyll build",
+    "optimize": "grunt"
+  }
+}
