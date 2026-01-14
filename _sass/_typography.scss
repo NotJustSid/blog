@@ -84,6 +84,16 @@ figcaption {
 	border-radius: 3px;
 }
 
+.info {
+	margin-top: 1.5em;
+	padding: .8em 1em;
+	text-indent: 0;
+	@include font-rem(14);
+	background-color: $background-info;
+	font-style: italic;
+	border-radius: 3px;
+}
+
 /* 
    Blockquotes
    ========================================================================== */
