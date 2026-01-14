@@ -14,7 +14,7 @@
 		<button class="btn comment-form-btn" type="reset" onclick="cancelCommentDialog()">Cancel</button>
 		<button type="submit" class="btn comment-form-btn">Send</button>
 	</form>
-	<div class="notice">All comments need to be approved before they are displayed. Thank you for your patience!</div>
+	<div class="info">After submitting, your comment may take a minute or two to appear on the page.</div>
 </dialog>
 
 <script>
@@ -25,4 +25,22 @@
 	function showCommentDialog() {
 		document.querySelector('.comment-dialog').show();
 	}
+
+	// Check for comment status in URL and show appropriate message
+	(function() {
+		const params = new URLSearchParams(window.location.search);
+		const status = params.get('comment');
+		
+		if (status === 'submitted') {
+			alert('Thanks for submitting your comment! It will be reviewed and should appear on the page soon.');
+			// Clean up URL
+			window.history.replaceState({}, '', window.location.pathname);
+		} else if (status === 'spam') {
+			alert('Your comment was flagged as potential spam. If you believe this is a mistake, please reach out to me with the content of your message.');
+			window.history.replaceState({}, '', window.location.pathname);
+		} else if (status === 'error') {
+			alert('Something went wrong while submitting your comment. Please try again later.');
+			window.history.replaceState({}, '', window.location.pathname);
+		}
+	})();
 </script>
