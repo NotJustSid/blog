@@ -105,4 +105,15 @@ body {
 .post-entry-image {
 	width: 100%;
 	filter: brightness(82.5%);
+	border-radius: 5px 5px 0 0; // Round top corners when image is present
+}
+
+// By default, round the top corners of the meta bar (for when there's no image)
+.post-entry-meta {
+	border-radius: 5px 5px 0 0;
+}
+
+// When the meta bar follows an image link, remove the top rounding
+a:has(.post-entry-image) + .post-entry-meta {
+	border-radius: 0;
 }
