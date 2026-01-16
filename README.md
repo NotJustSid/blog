@@ -61,12 +61,11 @@ pnpm serveall    # Includes drafts
 ### Creating content
 
 ```bash
-pnpm draft "My Post Title"           # Create draft
-pnpm publish _drafts/my-post.md      # Publish draft
-pnpm post "Quick Post"               # Create post directly
+pnpm draft "My Post Title"              # Create draft
+pnpm publish-draft _drafts/my-post.md   # Publish draft (move to _posts/)
+pnpm post "Quick Post"                  # Create post directly
+pnpm redate _posts/old-post.md          # Update date to today
 ```
-
----
 
 ## Comment System
 
