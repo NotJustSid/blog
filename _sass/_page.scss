@@ -119,6 +119,8 @@ body {
 			inset 0 -1px 1px rgba(0, 0, 0, 0.1);
 		// Subtle top border for glass edge
 		border-top: 1px solid rgba(255, 255, 255, 0.08);
+		// Blend mode for automatic contrast
+		isolation: isolate;
 	}
 
 	h1 {
@@ -126,7 +128,32 @@ body {
 		font-weight: 700;
 		margin: 10px 60px;
 		color: #fff;
-		text-shadow: 1px 1px 4px rgba($base-color,0.6);
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+		
+		// Liquid glass panel behind text
+		display: inline-block;
+		padding: 16px 32px;
+		border-radius: 12px;
+		
+		// Glass tint with neutral base + light refraction gradient
+		background: 
+			linear-gradient(
+				135deg,
+				rgba(255, 255, 255, 0.1) 0%,
+				rgba(255, 255, 255, 0.03) 100%
+			),
+			rgba(30, 30, 35, 0.45); // neutral dark base for universal contrast
+		
+		// Very subtle blur - glass separation, not frosted
+		backdrop-filter: blur(2px);
+		-webkit-backdrop-filter: blur(2px);
+		
+		// Glass edge highlights and depth
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow: 
+			inset 0 1px 0 rgba(255, 255, 255, 0.15),
+			inset 0 -1px 0 rgba(0, 0, 0, 0.1),
+			0 8px 32px rgba(0, 0, 0, 0.2);
 
 		a {
 			color: #fff;
