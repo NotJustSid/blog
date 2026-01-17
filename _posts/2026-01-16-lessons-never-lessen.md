@@ -4,6 +4,8 @@ title: Lessons Never Lessen
 description: 'A reflection on 2025, the sabbatical, and the lessons that keep coming.
   Also: the blog''s back!'
 date: 2026-01-16
+image:
+  feature: landing-header.svg
 ---
 *Gee Whiz!*{: .tooltip data-tooltip="Yep I'm cringing at myself already"} It's been a while. I guess I have been on a weird sabbatical from this "blog-space". A lot of plans for many things in and out of this space have been in and out of hold.
 
