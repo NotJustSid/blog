@@ -4,6 +4,17 @@ title: The Lazy Mathematician's Guide to Effortless Enumeration
 date: 2024-02-06
 mathjax: true
 description: "A post introducing one of the most convenient tools in the world of combinatorics and discrete mathematics: generating functions."
+tags:
+- math
+- mathematics
+- generating functions
+- combinatorics
+- discrete mathematics
+- sequences
+- series
+- power series
+- enumeration
+- calculus
 image:
   feature: Generating Functions/feature.svg
   credit: Me!
